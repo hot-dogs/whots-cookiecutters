@@ -9,8 +9,8 @@
 ## Thermosalinograph Data Acquisition and Processing 
 
 ### WHOTS-{{cookiecutter.whots_deployment_number}} Cruise
-### WHOTS-{{cookiecutter.whots_next_number}} Cruise
+### WHOTS-{{cookiecutter.whots_next_deployment}} Cruise
 
 ## subsection Shipboard ADCP
 ### WHOTS-{{cookiecutter.whots_deployment_number}} Deployment Cruise
-### WHOTS-{{cookiecutter.whots_next_number}} Deployment Cruise
+### WHOTS-{{cookiecutter.whots_next_deployment}} Deployment Cruise
