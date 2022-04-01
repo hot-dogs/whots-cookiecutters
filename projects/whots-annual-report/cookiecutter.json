@@ -1,0 +1,15 @@
+{
+  "whots_deployment_number": "20",
+  "whots_previous_deployment": "{{ (cookiecutter.whots_deployment_number|int) -1}}",
+  "whots_next_deployment": "{{ (cookiecutter.whots_deployment_number|int) +1}}",
+  "whots_ship": ["Kilo-Moana","Oscar Elton Settle"],
+  "whots_chief_scientist": ["Albert J Plueddemann"],
+  "whots_deployment_date": "DD Month YYYY ",
+  "whots_recovery_date": "DD Month YYYY",
+  "creator":"Your Name" ,
+  "created_on": "{% now 'local' %}"
+
+}
+
+
+
