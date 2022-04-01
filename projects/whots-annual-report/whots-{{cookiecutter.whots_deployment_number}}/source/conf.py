@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- Project information -----------------------------------------------------
 
 project = 'WHOTS-{{cookiecutter.whots_deployment_number}}'
-copyright = '2022, {{cookiecutter.creator}}'
+copyright = f'{datetime.now().year}, {{cookiecutter.creator}}'
 author = '{{cookiecutter.creator}}'
 
 # The full version, including alpha/beta/rc tags
@@ -74,7 +74,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.env']
 #
 html_theme = "sphinx_book_theme"
 html_logo = "_static/_images/logo_HOT.png"
-html_title = "WHOTS"
+html_title = "WHOTS-{{cookiecutter.whots_deployment_number}}"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -146,4 +146,4 @@ latex_domain_indices = True
 epub_title = u'whots-epub-test'
 epub_author = u'{{cookiecutter.creator}}'
 epub_publisher = u'{{cookiecutter.creator}}'
-epub_copyright = f'{{cookiecutter.created_on}}-{datetime.now().year}, Fernando Carvalho Pacheco'
+epub_copyright = f'{{cookiecutter.created_on}}-{datetime.now().year}, {{cookiecutter.creator}}'
