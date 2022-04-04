@@ -141,9 +141,6 @@ latex_documents = [
      u'{{cookiecutter.creator}}', 'manual'),
 ]
 
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-latex_logo = "_static/_images/all_whots_report.png"
 
 # If false, no module index is generated.
 latex_domain_indices = True
