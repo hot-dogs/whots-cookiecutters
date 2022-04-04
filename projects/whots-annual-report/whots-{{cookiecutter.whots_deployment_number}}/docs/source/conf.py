@@ -60,12 +60,15 @@ autosectionlabel_maxdepth = 3
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 source_suffix = '.md'
-# master_doc = 'index'
+#master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.env']
+exclude_patterns = ['_build', 'build', 'Thumbs.db', '.DS_Store', '.env']
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -82,28 +85,58 @@ html_title = "WHOTS-{{cookiecutter.whots_deployment_number}}"
 html_static_path = ['_static']
 
 html_theme_options = {
-    "repository_url": "https://github.com/hot-dogs/whots-annual-report",
+    "repository_url": "https://github.com/hot-dogs/whots{{cookiecutter.whots_deployment_number}}-data-report",
     "use_repository_button": True,
     "use_issues_button": True,
     "home_page_in_toc": False,
 }
 
 # -- Options for LaTeX output ---------------------------------------------
+latex_engine = 'pdflatex'
+
+latex_additional_files = [
+    'latex_templates/maketitle.tex.txt',
+    'latex_templates/mystyle.tex.txt',
+    'figures/logos/all_whots_report.png',
+]
+
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
     'papersize': 'a4paper',
-    # The font size ('10pt', '11pt' or '12pt').
-    'pointsize': '12pt',
-    # Additional stuff for the LaTeX preamble.
-    'preamble': '',
-    # Latex figure (float) alignment
+    # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup # 'fncychap': '\\usepackage[Lenny]{fncychap}',
+    'fncychap': '\\usepackage[Bjornstrup]{fncychap}',
+    'fontpkg': '\\usepackage{amsmath,amsfonts,amssymb,amsthm}',
     'figure_align': 'htbp',
+    'pointsize': '10pt',
+
+    # ===================== PREAMBLE ======================================
+    'preamble': r'''
+        \input{mystyle.tex.txt}
+    ''',
+    # ============== COVER PAGE + TABLE OF CONTENTS  ======================
+    'maketitle': r''' 
+        \input{maketitle.tex.txt}
+    ''',
+    # Latex figure (float) alignment
+    # 'figure_align': 'htbp',
+    'sphinxsetup': \
+        'hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
+        verbatimwithframe=true, \
+        TitleColor={rgb}{0,0,0}, \
+        HeaderFamily=\\rmfamily\\bfseries, \
+        InnerLinkColor={rgb}{0,0,1}, \
+        OuterLinkColor={rgb}{0,0,1}',
+    'tableofcontents': ' ',
+
 }
+
+# The name of an image file (relative to this directory) to place at the top of
+# the title page.
+latex_logo = "_static/_images/all_whots_report.png"
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'whots-{{cookiecutter.whots_deployment_number}}.tex',
+    ('index', 'whots-{{cookiecutter.whots_deployment_number}}-data-report.tex',
      u'WHOTS-{{cookiecutter.whots_deployment_number}}: Data Report',
      u'{{cookiecutter.creator}}', 'manual'),
 ]
@@ -112,24 +145,10 @@ latex_documents = [
 # the title page.
 latex_logo = "_static/_images/all_whots_report.png"
 
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-# latex_use_parts = False
-
-# If true, show page references after internal links.
-# latex_show_pagerefs = False
-
-# If true, show URL addresses after external links.
-# latex_show_urls = False
-
-# Documents to append as an appendix to all manuals.
-# latex_appendices = []
-
 # If false, no module index is generated.
 latex_domain_indices = True
 
 # -- Options for manual page output ---------------------------------------
-
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
