@@ -16,7 +16,7 @@
     \rule{\textwidth}{0.4pt} % Thin horizontal rule
 
     {\Huge \textbf{Hydrographic Observations At the Woods Hole Oceanographic
-    Institution Hawaii Ocean Time-series Site: {{cookiecutter.whots_deployment_date}} - 2020} \par}
+    Institution Hawaii Ocean Time-series Site: 2019 - 2020} \par}
 
     {\Large {by}\par}
 
