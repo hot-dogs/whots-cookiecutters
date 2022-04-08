@@ -94,10 +94,13 @@ html_theme_options = {
 # -- Options for LaTeX output ---------------------------------------------
 latex_engine = 'pdflatex'
 
+# The name of an image file (relative to this directory) to place at the top of
+# the title page.
+latex_logo = "_static/_images/all_whots_report.pdf"
+
 latex_additional_files = [
-    'latex_templates/maketitle.tex.txt',
-    'latex_templates/mystyle.tex.txt',
-    'figures/logos/all_whots_report.png',
+    "latex_templates/maketitle.sty",
+    "latex_templates/mystyle.sty",
 ]
 
 latex_elements = {
@@ -110,12 +113,13 @@ latex_elements = {
 
     # ===================== PREAMBLE ======================================
     'preamble': r'''
-        \input{mystyle.tex.txt}
+    \input{mystyle.sty}
     ''',
     # ============== COVER PAGE + TABLE OF CONTENTS  ======================
     'maketitle': r''' 
-        \input{maketitle.tex.txt}
+    \input{maketitle.sty}
     ''',
+
     # Latex figure (float) alignment
     # 'figure_align': 'htbp',
     'sphinxsetup': \
@@ -128,10 +132,6 @@ latex_elements = {
     'tableofcontents': ' ',
 
 }
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-latex_logo = "_static/_images/all_whots_report.png"
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
