@@ -40,7 +40,8 @@
 % date and time
 %=======================================================================
 \usepackage{datetime}
-\newdateformat{MonthYearFormat}{ %\monthname[\THEMONTH], \THEYEAR}
+\newdateformat{MonthYearFormat}{%
+    \monthname[\THEMONTH], \THEYEAR}
 
 %=======================================================================
 % RO, LE will not work for 'oneside' layout.
@@ -66,6 +67,7 @@
 % for oneside: change footer at right side.
 % If you want to use Left and right then use same as header defined above.
 %=======================================================================
+\fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny WHOTS-{{cookiecutter.whots_deployment_number}}} }{\href{https://whots-annual-report.readthedocs.io/projects/whots{{cookiecutter.whots_deployment_number}}-data-report/en/latest/}{\tiny WHOTS-{{cookiecutter.whots_deployment_number}}}}}
 
 %=======================================================================
 % Alternating Footer for two side
@@ -102,3 +104,8 @@
     		 urlcolor=cyan,
 		     citecolor=blue,
 		     pdfnewwindow=true}
+
+%======================================================================
+% Add Footnote cross reference
+%======================================================================
+\usepackage{footmisc}
