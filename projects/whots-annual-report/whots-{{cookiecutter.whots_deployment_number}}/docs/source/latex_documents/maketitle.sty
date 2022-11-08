@@ -5,7 +5,7 @@
     \centering
 
     %\vspace*{2mm} %%% * is used to give space from top
-    {\scshape\Huge \textbf{University of Hawaii at Manoa} \par}
+    {\scshape\Huge \textbf{The University of Hawaiʻi at Mānoa} \par}
 
     \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
     \rule{\textwidth}{1.6pt}
@@ -19,14 +19,15 @@
     {\Huge \textbf{Hydrographic Observations At the Woods Hole Oceanographic
     Institution Hawaii Ocean Time-series Site: {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}}} \par}
 
+
     {\Large {by}\par}
 
     {\Large
     Fernando Carvalho Pacheco\footnote{The University of Hawaii at Manoa\label{uhmanoa}},
     Fernando Santiago-Mandujano\footref{uhmanoa},
-    Albert Plueddemann\footnote{Woods Hole Oceanographic Institution\label{woodshole}},
-    Robert Weller\footref{woodshole},
     James Potemra\footref{uhmanoa},
+    Albert Plueddemann\footnote{Woods Hole Oceanographic Institution (WHOI)\label{woodshole}},
+    Robert Weller\footref{woodshole},
     Daniel Fitzgerald\footref{uhmanoa},
     and Nan Galbraith\footref{woodshole}
     \par}
@@ -42,19 +43,20 @@
     {\normalsize \ Approved for public release; distribution unlimited. \par}
 
     % Bottom of the page
-    \vspace{1.5cm}
-
-    {\normalsize \ The University of Hawaii at Manoa \\
-    School of Ocean and Earth Science and Technology \\
-    1000 Pope Road, Honolulu, Hawaii 96822\par}
     \vspace{0.5cm}
 
-    {\large\ SOEST Publication no. xXxXxXxXxXxXxX \par}
+    {\normalsize \ The University of Hawaiʻi at Mānoa \\
+    School of Ocean and Earth Science and Technology \\
+    1000 Pope Road, Honolulu, Hawaii 96822\par}
+    \vspace{0.50cm}
+
+    {\large\ SOEST Publication no. xXxXxXx \par}
 
     \vspace{0.25cm}
 
 \end{titlepage}
 %======================================= END =========================================
+
 
 %=============================== SECOND TITLE PAGE ===================================
 \begin{titlepage}
@@ -71,16 +73,16 @@
     {\large
     Fernando Carvalho Pacheco\footref{uhmanoa},
     Fernando Santiago-Mandujano\footref{uhmanoa},
+    James Potemra\footref{uhmanoa},
     Albert Plueddemann\footref{woodshole},
     Robert Weller\footref{woodshole},
-    James Potemra\footref{uhmanoa},
     Daniel Fitzgerald\footref{uhmanoa},
     and Nan Galbraith\footref{woodshole}
     \par}
 
     \vspace{1cm}
 
-    {\large \ The University of Hawaii at Manoa \\
+    {\large \ The University of Hawaiʻi at Mānoa \\
     School of Ocean and Earth Science and Technology \\
     1000 Pope Road \\
     Honolulu, Hawaii 96822\\
@@ -97,9 +99,14 @@
 
     \centering
     {\large Reproduction in whole or in part is permitted for any purpose of the United States Government.
-    This report should be cited as Pacheco F.C., et al., 2021, Hydrographic observations at the Woods Hole
-    Oceanographic Institution Hawaii Ocean Time-Series Site: {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}}, Data Report 16, School of Ocean Science and
-    Technology publication xxxxx, University of Hawaii at Manoa, xxx pp.(\url{http://www.soest.hawaii.edu/whots/WHOTS-{{cookiecutter.whots_deployment_number}}_datareport.pdf}) \par}
+    This report should be cited as Carvalho Pacheco, F., Santiago-Mandujano, F.,  Potemra, J. T., Plueddemann, A. J.,
+    Weller, R. A., Fitzgerald, D., \& Galbraith, N. R. (2022). Hydrographic Observations at the Woods Hole
+    Oceanographic Institution Hawaii Ocean Time-Series Site:
+    {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}},
+    Data Report {{cookiecutter.whots_deployment_number}}, School of Ocean and Earth Science and
+    Technology (SOEST), Department of Oceanography, University of Hawai‘i at Mānoa, Honolulu, HI.
+    DOI: \href{https://doi.org/xx.xxxx/zenodo.xxxxxxx}{https://doi.org/xxx.xxxx/zenodo.xxxxx}
+    URL: \href{http://whots{{cookiecutter.whots_deployment_number}}-data-report.readthedocs.io/}{http://whots{{cookiecutter.whots_deployment_number}}-data-report.readthedocs.io/}.\par}
 
     % Bottom of the page
     \vspace{4cm}
@@ -114,19 +121,25 @@
 
 %==============================  ACKNOWLEDGMENTS   ===================================
 \chapter*{Acknowledgments}
-{\large Many people participated in the WHOTS mooring deployment/recovery cruises. They are listed in Table II-1 and Table II-4.
-We gratefully acknowledge their contributions and support. Thanks are due to all the personnel of the Upper Ocean
-Processes Group (UOP) at WHOI who prepared the WHOTS buoy’s instrumentation and mooring; to Kelsey Maloney, Tully Rohrer,
-Svetlana Natarov, Noah Howins, Ryan Tabata, and Garret Hebert, for their technical assistance with the moored and shipboard
-instrumentation; to Kellie Terada for her excellent project support. We gratefully acknowledge the support from the
-colleagues at Sea-Bird to maintain the quality of the CTD data. We would also like to thank the captains and crew of the
-Ship Hi’ialakai, Ship Oscar Sette, and the University of Hawaii (UH) Marine Center staff for their efforts.
-The WHOTS mooring work is funded in part by the Ocean Observing and Monitoring Division, Climate Program Office
-(FundRef number xxxxxxxx), National Oceanic and Atmospheric Administration, U.S. Department of Commerce, under grant
-NA14OAR4320158 to the Woods Hole Oceanographic Institution. This work was also supported by the National Science
-Foundation grant xxxxxxxx.\par}
+{\large Many people participated in the WHOTS mooring deployment/recovery cruises. They are listed in Table 1 and
+and Table 4. We gratefully acknowledge their contributions and support. Thanks are due to all the personnel
+of the Upper Ocean Processes Group (UOP) at WHOI who prepared the WHOTS buoy’s instrumentation and mooring; to Kelsey
+Maloney, Tully Rohrer, Noah Howins, Ryan Tabata, and James Harris, for their technical assistance with the moored and
+shipboard instrumentation; We gratefully acknowledge the support from the colleagues at Sea-Bird to maintain the quality
+of the CTD data. We would also like to thank the captains and crew of the Ship Oscar Sette, and the University of
+Hawaiʻi Marine Center staff for their efforts. This publication is based upon observations from the WHOI-Hawaii Ocean
+Time-series Site (WHOTS) mooring, which is supported in part by the National Oceanic and Atmospheric Administration (\href{https://www.noaa.gov/}{NOAA}) Global
+Ocean Monitoring and Observing (\href{https://globalocean.noaa.gov/}{GOMO}) Program through the Cooperative Institute for the North Atlantic
+Region (\href{https://website.whoi.edu/cinar/}{CINAR}) under Cooperative Agreement NA14OAR4320158. NOAA CPO FundRef number 100007298 to the Woods Hole
+Oceanographic Institution, and by National Science Foundation grants \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=0327513}{OCE-0327513},
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=0752606&HistoricalAwards=false}{OCE-0752606},
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=0926766&HistoricalAwards=false}{OCE-0926766},
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1260164&HistoricalAwards=false}{OCE-1260164} and
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1756517&HistoricalAwards=false}{OCE-1756517}
+to the University of Hawaii for the Hawaii Ocean Time-series.\par}
 
 %======================================= END =========================================
+
 \clearpage
 \pagenumbering{roman}
 \tableofcontents
@@ -134,4 +147,3 @@ Foundation grant xxxxxxxx.\par}
 \listoftables
 \clearpage
 \pagenumbering{arabic}
-

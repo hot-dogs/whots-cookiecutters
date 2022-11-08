@@ -1,3 +1,4 @@
+
 %============= TOC, FIGURES, & TABLES===================================
 \setcounter{secnumdepth}{3}
 
@@ -41,7 +42,7 @@
 %=======================================================================
 \usepackage{datetime}
 \newdateformat{MonthYearFormat}{%
-    \monthname[\THEMONTH], \THEYEAR}
+    '\monthname[\THEMONTH], \THEYEAR}'
 
 %=======================================================================
 % RO, LE will not work for 'oneside' layout.
@@ -67,7 +68,9 @@
 % for oneside: change footer at right side.
 % If you want to use Left and right then use same as header defined above.
 %=======================================================================
+
 \fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny WHOTS-{{cookiecutter.whots_deployment_number}}} }{\href{https://whots-annual-report.readthedocs.io/projects/whots{{cookiecutter.whots_deployment_number}}-data-report/en/latest/}{\tiny WHOTS-{{cookiecutter.whots_deployment_number}}}}}
+
 
 %=======================================================================
 % Alternating Footer for two side
@@ -95,6 +98,15 @@
 \setlist{nosep}
 
 %=======================================================================
+% Quote Styles at the top of chapter
+%=======================================================================
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\columnwidth}
+\newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
+%%%%%%%%%%% Quote for all places except Chapter
+\newcommand{\sectionquote}[2]{{\quote{\textit{``#1''}}{\textbf {\textit{--#2}}}}}
+
+%=======================================================================
 % Hyper links colors
 %=======================================================================
 \usepackage{hyperref} % Hyper links
@@ -109,3 +121,31 @@
 % Add Footnote cross reference
 %======================================================================
 \usepackage{footmisc}
+
+%======================================================================
+% Removed references from toc
+%======================================================================
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+%======================================================================
+% Declare unicodes and symbols
+%======================================================================
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar,graphicx}
+\DeclareRobustCommand{\okina}{%
+  \raisebox{\dimexpr\fontcharht\font`A-\height}{%
+    \scalebox{0.8}{`}%
+  }%
+}
+\newunicodechar{ʻ}{\okina}
+
+% for °C
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+
+%======================================================================
+% hardware to remove extra bibliography/reference title on toc
+%======================================================================
+\addto\captionsenglish{\renewcommand{\bibname}{References}}
+\phantomsection
