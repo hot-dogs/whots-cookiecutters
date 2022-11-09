@@ -17,7 +17,7 @@
     \rule{\textwidth}{0.4pt} % Thin horizontal rule
 
     {\Huge \textbf{Hydrographic Observations At the Woods Hole Oceanographic
-    Institution Hawaii Ocean Time-series Site: {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}}} \par}
+    Institution Hawaii Ocean Time-series Site: {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}} \par}
 
 
     {\Large {by}\par}
@@ -36,7 +36,7 @@
     {\normalsize \Large \today\par}
 
     \vspace{1cm}
-    {\Huge\bfseries Data Report - {{cookiecutter.whots_deployment_number}} \par}
+    {\Huge\bfseries Data Report - {{cookiecutter.current_current_whots_deployment_number}} \par}
 
     \vspace{1.5cm}
 
@@ -64,7 +64,7 @@
 
     %\vspace*{10mm} %%% * is used to give space from top
     {\scshape\large\bfseries\textbf{Hydrographic Observations At the Woods Hole Oceanographic
-    Institution Hawaii Ocean Time-series Site: {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}}} \par}
+    Institution Hawaii Ocean Time-series Site: {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}} \par}
 
     \vspace{1cm}
     {\large {by}\par}
@@ -93,20 +93,20 @@
     {\large \today\par}
 
     \vspace{2cm}
-    {\large\bfseries Data Report - {{cookiecutter.whots_deployment_number}} \par}
+    {\large\bfseries Data Report - {{cookiecutter.current_current_whots_deployment_number}} \par}
 
     \vspace{2cm}
 
     \centering
     {\large Reproduction in whole or in part is permitted for any purpose of the United States Government.
     This report should be cited as Carvalho Pacheco, F., Santiago-Mandujano, F.,  Potemra, J. T., Plueddemann, A. J.,
-    Weller, R. A., Fitzgerald, D., \& Galbraith, N. R. (2022). Hydrographic Observations at the Woods Hole
+    Weller, R. A., Fitzgerald, D., \& Galbraith, N. R. ({{ (cookiecutter.created_on|string)[-4:]}}). Hydrographic Observations at the Woods Hole
     Oceanographic Institution Hawaii Ocean Time-Series Site:
-    {{ (cookiecutter.whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.whots_recovery_date|string)[-4:]}},
-    Data Report {{cookiecutter.whots_deployment_number}}, School of Ocean and Earth Science and
+    {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}},
+    Data Report {{cookiecutter.current_current_whots_deployment_number}}, School of Ocean and Earth Science and
     Technology (SOEST), Department of Oceanography, University of Hawai‘i at Mānoa, Honolulu, HI.
     DOI: \href{https://doi.org/xx.xxxx/zenodo.xxxxxxx}{https://doi.org/xxx.xxxx/zenodo.xxxxx}
-    URL: \href{http://whots{{cookiecutter.whots_deployment_number}}-data-report.readthedocs.io/}{http://whots{{cookiecutter.whots_deployment_number}}-data-report.readthedocs.io/}.\par}
+    URL: \href{http://whots{{cookiecutter.current_current_whots_deployment_number}}-data-report.readthedocs.io/}{http://whots{{cookiecutter.current_whots_deployment_number}}-data-report.readthedocs.io/}.\par}
 
     % Bottom of the page
     \vspace{4cm}
