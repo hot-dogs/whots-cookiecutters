@@ -1,0 +1,221 @@
+cff-version: 1.2.0
+title: "Hydrographic Observations at the Woods Hole Oceanographic Institution Hawaii Ocean Time-Series Site (WHOTS): {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}, Data Report #{{cookiecutter.current_whots_deployment_number}}"
+message: "If you use this report, please cite it using the metadata from this file."
+date-released: {{cookiecutter.created_on}}
+authors:
+  - given-names: Fernando
+    family-names: Carvalho Pacheco
+    email: fernando.pacheco@hawaii.edu
+    affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+    orcid: 'https://orcid.org/0000-0002-0376-5338'
+  - given-names: Fernando
+    family-names: Santiago-Mandujano
+    email: santiago@hawaii.edu
+    affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+  - given-names: James T.
+    family-names: Potemra
+    email: jimp@hawaii.edu
+    affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+    orcid: 'https://orcid.org/0000-0002-2515-6402'
+  - given-names: Albert J.
+    family-names: Plueddemann
+    affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+    email: aplueddemann@whoi.edu
+    orcid: 'https://orcid.org/0000-0003-0228-9795'
+  - given-names: Robert A.
+    family-names: Weller
+    email: rweller@whoi.edu
+    orcid: 'https://orcid.org/0000-0001-8001-6886'
+    affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+  - given-names: Daniel
+    family-names: Fitzgerald
+    email: danfitz@hawaii.edu
+    affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+  - given-names: Nancy R.
+    email: ngalbraith@whoi.edu
+    family-names: Galbraith
+    affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+contact:
+  - name: Hawaii Ocean Time-series
+    city: Honolulu
+    region: Hawaii
+    country: US
+    email: "hotdata@hawaii.edu"
+    website: "https://hahana.soest.hawaii.edu/hot/"
+keywords:
+  - WHOTS
+  - HOT
+  - Hawaii Ocean Time-series
+  - OceanSITES
+  - WHOTS Mooring
+  - WHOTS-{{cookiecutter.current_whots_deployment_number}} Data Report
+  - Oceanography
+  - timeseries
+  - physical oceanography
+repository-code: https://github.com/hot-dogs/whots{{cookiecutter.current_whots_deployment_number}}-data-report
+url: http://whots{{cookiecutter.current_whots_deployment_number}}-data-report.readthedocs.io/
+doi: xx.xxxx/zenodo.xxxxxxxxx
+preferred-citation:
+  type: report
+  authors:
+    - given-names: Fernando
+      family-names: Carvalho Pacheco
+      email: fernando.pacheco@hawaii.edu
+      affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+      orcid: 'https://orcid.org/0000-0002-0376-5338'
+    - given-names: Fernando
+      family-names: Santiago-Mandujano
+      email: santiago@hawaii.edu
+      affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+    - given-names: James T.
+      family-names: Potemra
+      email: jimp@hawaii.edu
+      affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+      orcid: 'https://orcid.org/0000-0002-2515-6402'
+    - given-names: Albert J.
+      family-names: Plueddemann
+      affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+      email: aplueddemann@whoi.edu
+      orcid: 'https://orcid.org/0000-0003-0228-9795'
+    - given-names: Robert A.
+      family-names: Weller
+      email: rweller@whoi.edu
+      orcid: 'https://orcid.org/0000-0001-8001-6886'
+      affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+    - given-names: Daniel
+      family-names: Fitzgerald
+      email: danfitz@hawaii.edu
+      affiliation: University of Hawaiʻi at Mānoa - UH Manoa
+    - given-names: Nancy R.
+      email: ngalbraith@whoi.edu
+      family-names: Galbraith
+      affiliation: Woods Hole Oceanographic Institution - Woods Hole, MA
+  start: 1
+  end: xxx
+  pages: xxx
+  title: "Hydrographic Observations at the Woods Hole Oceanographic Institution Hawaii Ocean Time-Series Site (WHOTS): {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}, Data Report #{{cookiecutter.current_whots_deployment_number}}"
+  year: "{{ (cookiecutter.created_on|string)[:4]}}"
+  institution:
+    name: "School of Ocean and Earth Science and Technology (SOEST), Department of Oceanography, University of Hawai‘i at Mānoa, Honolulu, HI"
+    address: 1000 Pope Road, Marine Sciences Building (MSB)
+    city: Honolulu
+    country: US
+    post-code: 96822
+  department: Department of Oceanography
+  date-released: {{cookiecutter.created_on}}
+  number: xxxxxx
+  license: CC-BY-4.0
+  collection-doi: xx.xxxx/zenodo.xxxxxxx
+  url: http://whots{{cookiecutter.current_whots_deployment_number}}-data-report.readthedocs.io/
+  doi: xx.xxxxx/zenodo.xxxxxxx
+  publisher:
+    name: "School of Ocean and Earth Science and Technology (SOEST)"
+  notes: "This publication is based upon observations from the WHOI-Hawaii Ocean Time-series Site (WHOTS) mooring, 
+  which is supported in part by the National Oceanic and Atmospheric Administration (NOAA) Global Ocean Monitoring and 
+  Observing (GOMO) Program through the Cooperative Institute for the North Atlantic Region (CINAR) under Cooperative 
+  Agreement NA14OAR4320158. NOAA CPO FundRef number 100007298 to the Woods Hole Oceanographic Institution, and by 
+  National Science Foundation grants OCE-0327513,OCE-0752606, OCE-0926766, OCE-1260164 and OCE-1756517 to the University 
+  of Hawaii for the Hawaii Ocean Time-series. This is SOEST contribution number XxXxXxXxX"
+  identifiers:
+    - type: doi
+      value: "xx.xxxx/zenodo.xxxxxxx"
+      description: The concept DOI of the work
+references:
+  - type: grant
+    authors:
+      - family-names: Lukas
+        given-names: Roger
+        email: "rlukas@hawaii.edu"
+    date-released: 2003-10-01
+    institution:
+      name: "National Science Foundation"
+    identifiers:
+      - description: "NSF award number."
+        type: other
+        value: "OCE-0327513"
+    title: "A Time-Series Study of Ocean Climate Processes in the North Pacific Subtropical Gyre"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0327513&HistoricalAwards=false"
+
+  - type: grant
+    authors:
+      - family-names: Lukas
+        given-names: Roger
+        email: "rlukas@hawaii.edu"
+      - family-names: Carter
+        given-names: Glenn
+    date-released: 2008-09-01
+    institution:
+      name: "National Science Foundation"
+    identifiers:
+      - description: "NSF award number."
+        type: other
+        value: "OCE-0752606"
+    title: "Hawaii Ocean Time-series: Study of Subtropical Gyre Physics and Climate Interactions"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0752606&HistoricalAwards=false"
+
+  - type: grant
+    authors:
+      - family-names: Church
+        given-names: Matthew
+        email: "matt.church@umontana.edu"
+      - family-names: Karl
+        given-names: David
+        email: "dkarl@hawaii.edu"
+      - family-names: Lukas
+        given-names: Roger
+        email: "rlukas@hawaii.edu"
+      - family-names: Bidigare
+        given-names: Robert
+    date-released: 2009-08-01
+    institution:
+      name: "National Science Foundation"
+    identifiers:
+      - description: "NSF award number."
+        type: other
+        value: "OCE-0926766"
+    title: "The Hawaii Ocean Time-series (HOT): Sustaining ocean ecosystem and climate observations in the North Pacific Subtropical Gyre"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0926766&HistoricalAwards=false"
+
+  - type: grant
+    authors:
+      - family-names: Karl
+        given-names: David
+        email: "dkarl@hawaii.edu"
+      - family-names: Lukas
+        given-names: Roger
+        email: "rlukas@hawaii.edu"
+      - family-names: Bidigare
+        given-names: Robert
+      - family-names: Church
+        given-names: Matthew
+        email: "matt.church@umontana.edu"
+    date-released: 2013-08-01
+    institution:
+      name: "National Science Foundation"
+    identifiers:
+      - description: "NSF award number."
+        type: other
+        value: "OCE-1260164"
+    title: "The Hawaii Ocean Time-series (HOT): Sustaining ocean ecosystem and climate observations in the North Pacific Subtropical Gyre"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1260164&HistoricalAwards=false"
+
+  - type: grant
+    authors:
+      - family-names: White
+        given-names: Angelicque
+        email: "aewhite@hawaii.edu"
+      - family-names: Karl
+        given-names: David
+        email: "dkarl@hawaii.edu"
+      - family-names: Potemra
+        given-names: James
+        email: "jimp@hawaii.edu"
+    date-released: 2018-08-01
+    institution:
+      name: "National Science Foundation"
+    identifiers:
+      - description: "NSF award number."
+        type: other
+        value: "OCE-1756517"
+    title: "Hawaii Ocean Time-series (HOT): 2018-2023"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1756517&HistoricalAwards=false"
