@@ -82,7 +82,7 @@ pygments_style = 'sphinx'
 
 html_theme = "sphinx_book_theme"
 html_logo = "_static/_images/new_logo_HOT.png"
-html_title = "WHOTS-{{cookiecutter.current_whots_deployment_number}}"
+html_title = "Data Report #{{cookiecutter.current_whots_deployment_number}}"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -149,7 +149,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'whots-{{cookiecutter.current_whots_deployment_number}}-data-report.tex',
+    ('index', 'whots{{cookiecutter.current_whots_deployment_number}}-data-report.tex',
      u'WHOTS-{{cookiecutter.current_whots_deployment_number}}: Data Report',
      u'{{cookiecutter.creator}}', 'manual'),
 ]
