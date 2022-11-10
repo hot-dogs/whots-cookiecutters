@@ -1,5 +1,5 @@
 {
-  "current_whots_deployment_number": "20",
+  "current_whots_deployment_number": "xx (Type the Data Report #xx, where xx=number)",
   "current_whots_deployment_date": "DD Month YYYY (check http://www.soest.hawaii.edu/whots/wh{{cookiecutter.current_whots_deployment_number}}_dep.html)",
   "current_whots_deployment_time": "HH:MM (check http://www.soest.hawaii.edu/whots/docs/whots{{cookiecutter.current_whots_deployment_number}}mooringlog_rec.pdf)",
   "current_whots_recovery_date": "DD Month YYYY (check http://www.soest.hawaii.edu/whots/wh{{cookiecutter.current_whots_deployment_number}}_dep.html)",
