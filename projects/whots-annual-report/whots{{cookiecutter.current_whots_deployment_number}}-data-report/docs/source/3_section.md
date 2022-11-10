@@ -1,7 +1,7 @@
 # Description of WHOTS-{{cookiecutter.current_whots_deployment_number}} Mooring
 
 The WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring, 
-deployed on {{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}, 
+deployed on {{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}, 
 from R/V {{cookiecutter.current_whots_ship}}, was outfitted with two complete 
 sets of Air-Sea Interaction Meteorological (ASIMET) sensors on the buoy and 
 underneath subsurface instruments from 7 to 155 m depth, at 1875 m and near the bottom. See
@@ -10,7 +10,7 @@ description of the buoy. The mooring could not be recovered in 2020 as
 originally planned due to ship availability and restrictions related to the 
 COVID-19 pandemic. The WHOTS-{{cookiecutter.current_whots_deployment_number}} 
 was recovered on 
-{{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[1:2]}}, {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}.
+{{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}.
 
 The buoy tower also contains a radar reflector, two marine lanterns, and
 Iridium satellite transmission systems that provide continuous buoy position
