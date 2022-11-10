@@ -1,5 +1,4 @@
 .. figure:: /figures/logos/all_whots_report.png
-    :height: 200px
     :align: center
 
 ---------
