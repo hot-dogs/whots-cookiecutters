@@ -35,7 +35,7 @@ and was recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}
 The cruises were aboard the R/V {{cookiecutter.current_whots_ship}}. The WHOTS-{{cookiecutter.next_whots_deployment}} mooring was 
 deployed on {{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}}  {{ (cookiecutter.next_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, during the 
 [WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html) and was 
-recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[1:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}. 
+recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[1:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}}. 
 
 This report documents and describes the oceanographic observations made on the 
 WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring for nearly one year and ten months and from shipboard measurements
@@ -66,16 +66,20 @@ Carvalho Pacheco, F., Santiago-Mandujano, F., Potemra, J. T., Plueddemann, A. J.
   author = {Carvalho Pacheco, Fernando and Santiago-Mandujano, Fernando and Potemra, James T. and Plueddemann, Albert J. and Weller, Robert A. and Fitzgerald, Daniel and Galbraith, Nancy R.},
   doi = {10.xxxx/zenodo.xxxxxxxx},
   institution = {School of Ocean and Earth Science and Technology (SOEST), Department of Oceanography, University of Hawai‘i at Mānoa, Honolulu, HI},
-  title = {'{'Hydrographic Observations at the Woods Hole Oceanographic Institution Hawaii Ocean Time-Series Site (WHOTS): {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}, Data Report #{{cookiecutter.current_whots_deployment_number}}'}'},
+  title = { {Hydrographic Observations at the Woods Hole Oceanographic Institution Hawaii Ocean Time-Series Site (WHOTS): {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}} - {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}, Data Report #{{cookiecutter.current_whots_deployment_number}}} },
   url = {http://whots{{cookiecutter.current_whots_deployment_number}}-data-report.readthedocs.io/},
-  year = {{{ (cookiecutter.created_on|string)[:4]}}},
-  note = {This publication is based upon observations from the WHOI-Hawaii
+  year = { {{ (cookiecutter.created_on|string)[:4]}} },
+  note = { This publication is based upon observations from the WHOI-Hawaii
   Ocean Time-series Site (WHOTS) mooring, which is supported in part by the
   National Oceanic and Atmospheric Administration (NOAA) Global Ocean
   Monitoring and Observing (GOMO) Program through the Cooperative Institute
   for the North Atlantic Region (CINAR) under Cooperative Agreement
   NA14OAR4320158. NOAA CPO FundRef number 100007298 to the Woods Hole
-  Oceanographic Institution, and by National Science Foundation grants OCE-0327513,OCE-0752606, OCE-0926766, OCE-1260164 and OCE-1756517 to the University of Hawaii for the Hawaii Ocean Time-series. This is SOEST contribution number xXxXxX.}
+  Oceanographic Institution, and by National Science Foundation grants 
+  OCE-0327513,OCE-0752606, OCE-0926766, OCE-1260164 and OCE-1756517 to the 
+  University of Hawaii for the Hawaii Ocean Time-series. 
+  This is SOEST contribution number xXxXxX.}
+
 }
 ```
 

@@ -75,7 +75,7 @@ and was recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}
 The cruises were aboard the R/V {{cookiecutter.current_whots_ship}}. The WHOTS-{{cookiecutter.next_whots_deployment}} mooring was 
 deployed on {{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}}  {{ (cookiecutter.next_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, during the 
 [WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html) and was 
-recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[1:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}. 
+recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[1:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}}. 
 
 
 This report documents and describes the oceanographic observations made on the

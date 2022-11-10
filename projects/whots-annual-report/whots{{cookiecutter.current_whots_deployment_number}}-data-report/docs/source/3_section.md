@@ -1,8 +1,5 @@
 # Description of WHOTS-{{cookiecutter.current_whots_deployment_number}} Mooring
 
-`````{admonition} PLEASE CHECK THE FOLLOWING TEXT! UPDATE TABLES, NEW CITATIONS... AS WELL!!
-class: warning
-
 The WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring, 
 deployed on {{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}, 
 from R/V {{cookiecutter.current_whots_ship}}, was outfitted with two complete 
@@ -196,4 +193,3 @@ questionable data from this ADCP at this time, apart from near-surface
 side-lobe interference. The 600 kHz instrument (47.5 m) was recovered with its battery
 wire cut and separated from the instrument. The data record indicates that it
 stopped recording on January 21, 2020.
-`````

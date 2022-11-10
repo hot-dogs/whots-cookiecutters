@@ -2,21 +2,19 @@
 
 ## WHOTS-{{cookiecutter.current_whots_deployment_number}} Cruise: WHOTS-{{cookiecutter.current_whots_deployment_number}} Mooring Deployment
 
-`````{admonition} PLEASE CHECK THE FOLLOWING TEXT! I DID NOT EDIT EVERTHING!! UPDATE TABLES AS WELL!!
-class: warning
 
 The Woods Hole Oceanographic Institution Upper Ocean Processes Group (WHOI/UOP)
 , with the UH group's assistance, conducted the {{cookiecutter.current_whots_deployment_number}} deployment of the
 WHOTS mooring onboard the {{cookiecutter.current_whots_ship}} during the WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise between
 {{ (cookiecutter.current_whots_cruise_start_date|string)[3:-5]}}  {{ (cookiecutter.current_whots_cruise_start_date|string)[1:2]}} 
 and {{ (cookiecutter.current_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.current_whots_cruise_end_date|string)[1:2]}},
-{{ (cookiecutter.current_whots_cruise_end_date|string)[-4:]}. The WHOTS-{{cookiecutter.current_whots_deployment_number}} 
-mooring was deployed at Station {{cookiecutter.current_whots_deployment_station on 
+{{ (cookiecutter.current_whots_cruise_end_date|string)[-4:]}}. The WHOTS-{{cookiecutter.current_whots_deployment_number}} 
+mooring was deployed at Station {{cookiecutter.current_whots_deployment_station}} on 
 {{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[1:2]}},  {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}, 
 {{cookiecutter.current_whots_deployment_time}} UTC at 
 {{cookiecutter.current_whots_deployment_anchor_position_latitude}}, {{cookiecutter.current_whots_deployment_anchor_position_longitude}}, 
 and the WHOTS-{{cookiecutter.previous_whots_deployment}} mooring were recovered 
-on {{ (cookiecutter.previous_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.previous_whots_recovery_date|string)[1:2]}},  {{ (cookiecutter.previous_whots_recovery_date|string)[-4:]}. 
+on {{ (cookiecutter.previous_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.previous_whots_recovery_date|string)[1:2]}},  {{ (cookiecutter.previous_whots_recovery_date|string)[-4:]}}. 
 The scientific personnel that participated during the cruise are listed in 
 {numref}`table-1`.
 
@@ -137,7 +135,7 @@ diurnal cycle is apparent in the temperature and conductivity.
 The WHOI/UOP Group conducted the mooring turnaround operations during the
 WHOTS-{{cookiecutter.next_whots_deployment}} cruise between 
 {{ (cookiecutter.next_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_start_date|string)[1:2]}}, 
-and {{ (cookiecutter.next_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_end_date|string)[1:2]}}, {{ (cookiecutter.next_whots_cruise_end_date|string)[-4:]}.
+and {{ (cookiecutter.next_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_end_date|string)[1:2]}}, {{ (cookiecutter.next_whots_cruise_end_date|string)[-4:]}}.
 The WHOTS-{{cookiecutter.next_whots_deployment}} mooring
 was deployed at Station {{cookiecutter.next_whots_deployment_station}} on 
 {{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.next_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, 
@@ -247,4 +245,3 @@ liters/minute during the cruise. Only the SBE-45 has a debubbler. Salinity
 water samples were taken every 8 hours from the exhaust in the Chemistry lab
 using 0.25-liter glass bottles, to be measured in the UH lab to correct any
 drift in the thermosalinograph conductivities.
-`````

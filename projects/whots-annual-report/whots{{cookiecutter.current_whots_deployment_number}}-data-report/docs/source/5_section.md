@@ -2,9 +2,6 @@
 
 ## MicroCAT Data Processing Procedures
 
-`````{admonition} PLEASE CHECK THE FOLLOWING TEXT! UPDATE TABLES, NEW CITATIONS and VALUES ... AS WELL!!
-class: warning
-
 
 Each moored MicroCAT temperature, conductivity, and pressure (when installed)
 was calibrated at Sea-Bird before their deployment and after their recovery on
@@ -879,5 +876,3 @@ WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 |  **Start Time**  |     10/6/19 03:07     |     7/30/19 21:01      |
 |   **End Time**   |     3/28/20 04:43     |     8/30/21 12:00      |
 ```
-
-`````

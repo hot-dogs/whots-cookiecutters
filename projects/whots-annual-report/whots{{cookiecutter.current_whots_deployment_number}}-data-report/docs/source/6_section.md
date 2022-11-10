@@ -1,6 +1,5 @@
 # Results
-`````{admonition} PLEASE CHECK THE FOLLOWING TEXT! UPDATE TABLES, NEW CITATIONS and VALUES ... AS WELL!!
-class: warning
+
 
 During the WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise (WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring deployment, October 4-12, 2019), a
 weakening front north of the Hawaiian Islands acted to weaken trades across the
@@ -775,5 +774,3 @@ kHz (left panel) and the 600 kHz ADCP deployments (right panel, blue circles).
 The red line is a quadratic fit to the median tilt calculated every 0.2 km
 distance bins.
 ```
-
-`````

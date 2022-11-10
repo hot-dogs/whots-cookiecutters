@@ -6,7 +6,7 @@
 ````
 
 
-# # WHOTS {{cookiecutter.current_whots_deployment_number}}
+# WHOTS {{cookiecutter.current_whots_deployment_number}}
 
 ```{toctree} 
 :maxdepth: 3

@@ -1,0 +1,361 @@
+TS 19/09/27,1 00:51:59
+>ts?
+TS 19/09/27,00:52:02 --- Time Set (yr/mon/day,hour:min:sec)
+>ps0
+  Instrument S/N:  1825
+       Frequency:  614400 HZ
+   Configuration:  4 BEAM, JANUS
+     Match Layer:  10
+      Beam Angle:  20 DEGREES
+    Beam Pattern:  CONVEX
+     Orientation:  UP
+       Sensor(s):  HEADING  TILT 1  TILT 2  DEPTH  TEMPERATURE  PRESSURE
+Pressure Sens Coefficients:
+              c3 = +1.762294E-13
+              c2 = +3.330826E-08
+              c1 = +1.389532E-01
+          Offset = -4.652679E+00
+
+Temp Sens Offset:  -0.13 degrees C
+
+    CPU Firmware:  51.40 [0]
+   Boot Code Ver:  Required:  1.16   Actual:  1.16
+    DEMOD #1 Ver:  ad48, Type:  1f
+    DEMOD #2 Ver:  ad48, Type:  1f
+    PWRTIMG  Ver:  85d3, Type:   5
+
+Board Serial Number Data:
+   E4  00 00 02 00 20 C0  09 DSP727-2001-03F
+   0D  00 00 02 48 A7 98  09 REC727-1000-03A
+   7E  00 00 02 00 4D 0B  09 PIO727-3000-03C
+   97  00 00 02 00 3F BB  09 CPU727-2000-00H
+>oa  pa
+
+PRE-DEPLOYMENT TESTS
+
+CPU TESTS:
+  RTC......................................PASS
+  RAM......................................PASS
+  ROM......................................PASS
+RECORDER TESTS:
+  PC Card #0...............................NOT DETECTED
+  PC Card #1...............................DETECTED
+    Card Detect............................PASS
+    Communication..........................PASS
+    DOS Structure..........................PASS
+    Sector Test (short)....................PASS
+DSP TESTS:
+  Timing RAM...............................PASS
+  Demod  RAM...............................PASS
+  Demod  REG...............................PASS
+  FIFOs....................................PASS
+SYSTEM TESTS:
+  XILINX Interrupts... IRQ3  IRQ3  IRQ3 ...PASS
+  Wide Bandwidth...........................PASS
+  Narrow Bandwidth......................***FAIL***
+  RSSI Filter..............................PASS
+  Transmit.................................PASS
+SENSOR TESTS:
+  H/W Operation.........................***FAIL***
+>ps3
+Beam Width:   3.7 degrees
+
+Beam     Elevation     Azimuth
+  1         -70.08      269.99
+  2         -70.06       89.98
+  3         -70.08        0.01
+  4         -70.06      180.01
+
+Beam Directional Matrix (Down):
+  0.3409    0.0001    0.9402    0.2413
+ -0.3412   -0.0001    0.9400    0.2411
+ -0.0001   -0.3409    0.9402   -0.2413
+  0.0001    0.3412    0.9400   -0.2411
+
+Instrument Transformation Matrix (Down):    Q14:
+  1.4657   -1.4664    0.0006   -0.0001       24014  -24026      10      -1
+ -0.0006    0.0001   -1.4656    1.4664         -10       1  -24013   24025
+  0.2661    0.2658    0.2661    0.2658        4359    4355    4359    4355
+  1.0371    1.0362   -1.0371   -1.0362       16992   16977  -16992  -16977
+Beam Angle Corrections Are Loaded.
+>ac
+
+              ACTIVE FLUXGATE CALIBRATION MATRICES in NVRAM
+               Calibration date and time: 9/25/1919  01:34:22
+                             S inverse
+          ?                                                  ?
+     Bx   ?  -3.9565e-01 -3.9982e-01  1.6721e-02 -7.9667e-03 ?
+     By   ?   1.8555e-02 -1.0046e-02  4.7012e-01  1.0318e-02 ?
+     Bz   ?   1.6208e-01 -1.7687e-01  1.6018e-02 -2.6336e-01 ?
+     Err  ?   3.5809e-01 -3.6494e-01 -3.2105e-02  4.6352e-01 ?
+          ?                                                  ?
+                             Coil Offset
+                         ?                ?
+                         ?   3.2735e+04   ?
+                         ?   3.5691e+04   ?
+                         ?   3.4302e+04   ?
+                         ?   3.5621e+04   ?
+                         ?                ?
+                             Electrical Null
+                              ?       ?
+                              ? 34184 ?
+                              ?       ?
+                    TILT CALIBRATION MATRICES in NVRAM
+                Calibration date and time: 4/16/2001  12:48:57
+              Average Temperature During Calibration was   24.4 ?C
+
+                   Up                              Down
+
+        ?                           ?     ?                           ?
+ Roll   ?   4.2179e-08  -1.5120e-05 ?     ?   6.5215e-08   1.5955e-05 ?
+ Pitch  ?  -1.4906e-05  -7.0298e-09 ?     ?  -1.5840e-05   5.0166e-08 ?
+        ?                           ?     ?                           ?
+
+        ?                           ?     ?                           ?
+ Offset ?   3.0526e+04   3.2239e+04 ?     ?   3.2491e+04   3.1805e+04 ?
+        ?                           ?     ?                           ?
+
+                             ?       ?
+                      Null   ? 33425 ?
+                             ?       ?
+
+
+
+
+
+>rb
+RECORDER TESTS:
+  PC Card #0...............................NOT DETECTED
+  PC Card #1...............................DETECTED
+    Card Detect............................PASS
+    Communication..........................PASS
+    DOS Structure..........................PASS
+    Sector Test (Short)....................PASS
+
+Recorder tests complete.
+
+>rr
+Recorder Directory:
+Volume serial number for device #1 is 206f-6241
+
+  WHT14000 000        40597050 09-30-18   1:45:32a r  a [    2]
+
+  Bytes used on device #1 = 40597050
+Total capacity   =  256352256 bytes
+Total bytes used =   40597050 bytes in 1 files
+Total bytes free =  215752704 bytes
+
+>rs
+RS = 039,206 ------------- REC SPACE USED (MB), FREE (MB)
+
+>re ErAsE  erasing...
+Recorder erased.
+
+>rr
+Recorder Directory:
+Volume serial number for device #1 is 206f-6241
+
+  No files found.
+
+  Bytes used on device #1 = 0
+Total capacity   =  256352256 bytes
+Total bytes used =          0 bytes in 0 files
+Total bytes free =  256352256 bytes
+
+>rs
+RS = 000,245 ------------- REC SPACE USED (MB), FREE (MB)
+
+>cf11101
+>ea0
+>eb0954
+>ed047
+>es35
+>ex11111
+>ez1111101
+>wa70
+>wb0
+>wd111100000
+>wf0088
+>wl2,6
+>wp80
+>ws0200
+>wn25
+>wv175
+>te00:10:00.00
+>tp00:02:00
+>tg20191004,00:00:00
+>rnwht16
+>ck
+[Parameters saved as USER defaults]
+
+>deploy
+Deployment Commands:
+BP = 000 ----------------- Bottom Track Pings per Ensemble
+
+CF = 11101 --------------- Flow Ctrl (EnsCyc;PngCyc;Binry;Ser;Rec)
+CK ----------------------- Keep Parameters as USER Defaults
+CR # --------------------- Retrieve Parameters (0 = USER, 1 = FACTORY)
+CS ----------------------- Start Deployment
+
+EA = +00000 -------------- Heading Alignment (1/100 deg)
+EB = +00954 -------------- Heading Bias (1/100 deg)
+ED = 00047 --------------- Transducer Depth (0 - 65535 dm)
+ES = 35 ------------------ Salinity (0-40 pp thousand)
+EX = 11111 --------------- Coord Transform (Xform: Type,Tilts,3 Bm,Map)
+EZ = 1111101 ------------- Sensor Source (C,D,H,P,R,S,T)
+
+RE ----------------------- Recorder ErAsE
+RN ----------------------- Set Deployment Name
+
+TE = 00:10:00.00 --------- Time per Ensemble (hrs:min:sec.sec/100)
+TF = 19/10/04,00:00:00 --- Time of First Ping (yr/mon/day,hour:min:sec)
+TP = 00:02.00 ------------ Time per Ping (min:sec.sec/100)
+TS = 19/09/27,00:55:44 --- Time Set (yr/mon/day,hour:min:sec)
+
+Press any key to continue
+
+WD = 111 100 000 --------- Data Out (Vel,Cor,Amp; PG,St,P0; P1,P2,P3)
+WF = 0088 ---------------- Blank After Transmit (cm)
+WN = 025 ----------------- Number of depth cells (1-128)
+WP = 00080 --------------- Pings per Ensemble (0-16384)
+WS = 0200 ---------------- Depth Cell Size (cm)
+WV = 175 ----------------- Mode 1 Ambiguity Vel (cm/s radial)
+
+>cs
+
+
+[BREAK Wakeup A]
+WorkHorse Broadband ADCP Version 51.40
+Teledyne RD Instruments (c) 1996-2010
+All Rights Reserved.
+>rn?
+
+Current deployment name = WHT16
+
+>ts?
+TS 19/09/27,02:18:25 --- Time Set (yr/mon/day,hour:min:sec)
+>TS 19/09/27,  0221  :22:3 30
+>ts?
+TS 19/09/27,02:22:36 --- Time Set (yr/mon/day,hour:min:sec)
+>rnwht16
+>cf11101
+>ea0
+>eb0954
+>ed0470
+>es35
+>ex11111
+>ez1111101
+>wa70
+>wb0
+>wd111100000
+>wf0088
+>wl2,6
+>wp80
+>ws0200
+>wn25
+>wv175
+>te00:10:00.00
+>tp00:02:00
+>tg20191004,00:00:00
+>ck
+[Parameters saved as USER defaults]
+>deploy
+Deployment Commands:
+BP = 000 ----------------- Bottom Track Pings per Ensemble
+
+CF = 11101 --------------- Flow Ctrl (EnsCyc;PngCyc;Binry;Ser;Rec)
+CK ----------------------- Keep Parameters as USER Defaults
+CR # --------------------- Retrieve Parameters (0 = USER, 1 = FACTORY)
+CS ----------------------- Start Deployment
+
+EA = +00000 -------------- Heading Alignment (1/100 deg)
+EB = +00954 -------------- Heading Bias (1/100 deg)
+ED = 00470 --------------- Transducer Depth (0 - 65535 dm)
+ES = 35 ------------------ Salinity (0-40 pp thousand)
+EX = 11111 --------------- Coord Transform (Xform: Type,Tilts,3 Bm,Map)
+EZ = 1111101 ------------- Sensor Source (C,D,H,P,R,S,T)
+
+RE ----------------------- Recorder ErAsE
+RN ----------------------- Set Deployment Name
+
+TE = 00:10:00.00 --------- Time per Ensemble (hrs:min:sec.sec/100)
+TF = 19/10/04,00:00:00 --- Time of First Ping (yr/mon/day,hour:min:sec)
+TP = 00:02.00 ------------ Time per Ping (min:sec.sec/100)
+TS = 19/09/27,02:23:16 --- Time Set (yr/mon/day,hour:min:sec)
+
+Press any key to continue
+
+WD = 111 100 000 --------- Data Out (Vel,Cor,Amp; PG,St,P0; P1,P2,P3)
+WF = 0088 ---------------- Blank After Transmit (cm)
+WN = 025 ----------------- Number of depth cells (1-128)
+WP = 00080 --------------- Pings per Ensemble (0-16384)
+WS = 0200 ---------------- Depth Cell Size (cm)
+WV = 175 ----------------- Mode 1 Ambiguity Vel (cm/s radial)
+
+>rs
+RS = 000,245 ------------- REC SPACE USED (MB), FREE (MB)
+
+>cs
+
+
+[BREAK Wakeup A]
+WorkHorse Broadband ADCP Version 51.40
+Teledyne RD Instruments (c) 1996-2010
+All Rights Reserved.
+>ts?
+TS 19/09/27,02:42:26 --- Time Set (yr/mon/day,hour:min:sec)
+>rnwht16
+>cf11101
+>ea0
+>eb0954
+>ed0475
+>es35
+>ex11111
+>ez1111101
+>wa70
+>wb0
+>wd111100000
+>wf0088
+>wl2,6
+>wp80
+>ws0200
+>wn25
+>wv175
+>te00:10:00.00
+>tp00:02:00
+>tg20191004,00:00:00
+>ck'  ERR 005:  EXTRA PARAMETERS ENCOUNTERED
+>ck
+[Parameters saved as USER defaults]
+>deploy
+Deployment Commands:
+BP = 000 ----------------- Bottom Track Pings per Ensemble
+
+CF = 11101 --------------- Flow Ctrl (EnsCyc;PngCyc;Binry;Ser;Rec)
+CK ----------------------- Keep Parameters as USER Defaults
+CR # --------------------- Retrieve Parameters (0 = USER, 1 = FACTORY)
+CS ----------------------- Start Deployment
+
+EA = +00000 -------------- Heading Alignment (1/100 deg)
+EB = +00954 -------------- Heading Bias (1/100 deg)
+ED = 00475 --------------- Transducer Depth (0 - 65535 dm)
+ES = 35 ------------------ Salinity (0-40 pp thousand)
+EX = 11111 --------------- Coord Transform (Xform: Type,Tilts,3 Bm,Map)
+EZ = 1111101 ------------- Sensor Source (C,D,H,P,R,S,T)
+
+RE ----------------------- Recorder ErAsE
+RN ----------------------- Set Deployment Name
+
+TE = 00:10:00.00 --------- Time per Ensemble (hrs:min:sec.sec/100)
+TF = 19/10/04,00:00:00 --- Time of First Ping (yr/mon/day,hour:min:sec)
+TP = 00:02.00 ------------ Time per Ping (min:sec.sec/100)
+TS = 19/09/27,02:45:08 --- Time Set (yr/mon/day,hour:min:sec)
+
+Press any key to continue
+
+WD = 111 100 000 --------- Data Out (Vel,Cor,Amp; PG,St,P0; P1,P2,P3)
+WF = 0088 ---------------- Blank After Transmit (cm)
+WN = 025 ----------------- Number of depth cells (1-128)
+WP = 00080 --------------- Pings per Ensemble (0-16384)
+WS = 0200 ---------------- Depth Cell Size (cm)
+WV = 175 ----------------- Mode 1 Ambiguity Vel (cm/s radial)

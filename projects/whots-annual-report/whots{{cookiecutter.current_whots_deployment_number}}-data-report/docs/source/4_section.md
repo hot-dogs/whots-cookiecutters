@@ -1,8 +1,5 @@
 # WHOTS ({{cookiecutter.current_whots_deployment_number}}-{{cookiecutter.next_whots_deployment}}) Cruise Shipboard Observations
 
-`````{admonition} PLEASE CHECK THE FOLLOWING TEXT! UPDATE TABLES, NEW CITATIONS and VALUES ... AS WELL!!
-class: warning
-
 
 The hydrographic profile observations made during the WHOTS cruises were
 obtained with a Sea-Bird CTD package with dual temperature, salinity, and
@@ -417,5 +414,3 @@ WHOTS-{{cookiecutter.next_whots_deployment}} moorings. The broadband system only
 |                File starting time                | 08/20/21 01:22:22 | 08/20/21 01:22:22 |
 |                 File ending time                 | 09/01/21 19:44:41 | 09/01/21 19:44:41 |
 ```
-
-`````
