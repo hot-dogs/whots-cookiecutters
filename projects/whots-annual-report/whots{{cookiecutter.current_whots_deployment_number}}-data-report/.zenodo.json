@@ -80,6 +80,12 @@
       "identifier": "ftp://mananui.soest.hawaii.edu/pub/hot/whots/whots_cruises/wh{{cookiecutter.next_whots_deployment}}_cruise",
       "relation": "isSupplementedBy",
       "resource_type": "dataset"
+    },
+    {
+      "scheme": "url",
+      "identifier": "http://www.soest.hawaii.edu/whots/WHOTS-{{cookiecutter.current_whots_deployment_number}}_datareport.pdf",
+      "relation": "isIdenticalTo",
+      "resource_type": "report"
     }
   ],
   "creators": [
