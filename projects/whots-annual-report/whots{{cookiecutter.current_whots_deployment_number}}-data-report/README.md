@@ -28,7 +28,7 @@ the global array of ocean reference stations supported by the National Oceanic
 and Atmospheric Administration’s (NOAA) Office of Climate Observation. 
 
 The WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was deployed on 
-{{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[1:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}
+{{(cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{(cookiecutter.current_whots_deployment_date|string)[1:2]}}, {{(cookiecutter.current_whots_deployment_date|string)[-4:]}}
  ([WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.current_whots_deployment_number}}_dep.html)) 
 and was recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} { (cookiecutter.current_whots_recovery_date|string)[1:2]}},  {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}} 
 ([WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html)). 
