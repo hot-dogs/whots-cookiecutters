@@ -2,16 +2,16 @@
 
 In 2003, [Robert Weller](https://www.whoi.edu/profile/rweller/) ([Woods Hole
 Oceanographic Institution [WHOI]](https://www.whoi.edu))
-, [Albert Plueddemann](https://www.whoi.edu/profile/aplueddemann/) 
+, [Albert Plueddemann](https://www.whoi.edu/profile/aplueddemann/)
 ([WHOI](https://www.whoi.edu)), and
 [Roger Lukas](http://www.soest.hawaii.edu/oceanography/faculty/rlukas/)
-([The University of Hawaii [UH]](https://manoa.hawaii.edu)) proposed to establish 
+([The University of Hawaii [UH]](https://manoa.hawaii.edu)) proposed to establish
 a [long-term surface mooring at the Hawaii Ocean Time-series (HOT)](http://www.soest.hawaii.edu/whots/)
 [Station ALOHA (22°45’N, 158°W)](https://hahana.soest.hawaii.edu/stationaloha/)
 to provide sustained, high-quality air-sea fluxes and the associated upper
 ocean response as a coordinated part of the HOT program, and as an element of
 the global array of ocean reference stations supported by the National Oceanic
-and Atmospheric Administration’s (NOAA) Office of Climate Observation. 
+and Atmospheric Administration’s (NOAA) Office of Climate Observation.
 
 With support from the NOAA and the National Science Foundation (NSF), the WHOI
 HOT Site (WHOTS) surface mooring has been maintained at Station ALOHA since
@@ -22,12 +22,12 @@ oligotrophic North Pacific Ocean. The approach is to maintain a surface mooring
 outfitted for meteorological and oceanographic measurements at a site near
 Station ALOHA by successive mooring turnarounds. These observations will be
 used to investigate air-sea interaction processes related to climate
-variability
+variability.
 
 The original mooring system is described in the mooring deployment/recovery
 cruise reports {cite}`Plueddemann2006, Whelan2007, Whelan2008,Whelan2008,Whelan2010,Santiago-Mandujano2019,Hasbrouck2019,Santiago-Mandujano2021,Santiago-Mandujano2022`.
 Briefly, a Surlyn foam surface buoy is equipped with meteorological
-instrumentation, including two complete Air-Sea Interaction Meteorological 
+instrumentation, including two complete Air-Sea Interaction Meteorological
 (ASIMET) systems, measuring air and sea surface temperatures, relative humidity,
 barometric pressure, wind speed and direction, incoming shortwave and longwave
 radiation, and precipitation {cite}`Hosom1995, Colbo2009`. Complete surface
@@ -67,16 +67,15 @@ deployment (June 2012) to measure near-bottom temperature and salinity.
 WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring design
 ```
 
-The WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was deployed on 
+The WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was deployed on
 {{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}
- ([WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.current_whots_deployment_number}}_dep.html)) 
-and was recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[:2]}},  {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}} 
-([WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html)). 
-The cruises were aboard the R/V {{cookiecutter.current_whots_ship}}. The WHOTS-{{cookiecutter.next_whots_deployment}} mooring was 
-deployed on {{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}}  {{ (cookiecutter.next_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, during the 
-[WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html) and was 
-recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}}. 
-
+([WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.current_whots_deployment_number}}_dep.html))
+and was recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}
+([WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html)).
+The cruises were aboard the R/V {{cookiecutter.current_whots_ship}}. The WHOTS-{{cookiecutter.next_whots_deployment}} mooring was
+deployed on {{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.next_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, during the
+[WHOTS-{{cookiecutter.next_whots_deployment}} cruise](http://www.soest.hawaii.edu/whots/wh{{cookiecutter.next_whots_deployment}}_dep.html) and was
+recovered on {{ (cookiecutter.next_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.next_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.next_whots_recovery_date|string)[-4:]}}.
 
 This report documents and describes the oceanographic observations made on the
 WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring for nearly one year and ten months and from shipboard
@@ -87,7 +86,7 @@ recovered. Sections
 description of the cruises and the mooring, respectively. Sampling and
 processing procedures of the hydrographic casts, thermosalinograph, and
 shipboard ADCP data collected during these cruises are described in Section
-{ref}`IV</4_section.md#WHOTS-{{cookiecutter.current_whots_deployment_number}}-17-cruise-shipboard-observations>`. Section
+{ref}`IV</4_section.md#WHOTS-{{cookiecutter.current_whots_deployment_number}}-{{cookiecutter.next_whots_deployment}}-cruise-shipboard-observations>`. Section
 {ref}`V</5_section.md#moored-instrument-observations>` includes the processing
 procedures for the data collected by the moored instruments:
 {ref}`SeaCATs, MicroCATs</5_section.md#microcat-data-processing-procedures>`,
