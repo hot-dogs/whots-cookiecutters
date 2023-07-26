@@ -44,9 +44,9 @@
   ],
   "locations": [
     {
-      "lat": "{{cookiecutter.current_whots_deployment_anchor_position_latitude}}",
+      "lat": {{cookiecutter.current_whots_deployment_anchor_position_latitude}},
       "place": "WHOTS-{{cookiecutter.current_whots_deployment_number}}",
-      "lon": "{{cookiecutter.current_whots_deployment_anchor_position_longitude}}",
+      "lon": {{cookiecutter.current_whots_deployment_anchor_position_longitude}},
       "description": "Set: {{cookiecutter.current_whots_deployment_date}} from R/V {{cookiecutter.current_whots_ship}}; Recovered: {{cookiecutter.current_whots_recovery_date}}, from R/V {{cookiecutter.current_whots_ship}}; Water depth: {{cookiecutter.current_whots_deployment_anchor_water_depth}}m"
     }
   ],
@@ -230,7 +230,7 @@
     "Tupas, L., Santiago-Mandujano, F., Hebel, D., Lukas, R., Karl, D., & Firing, E. (1993). Hawaii ocean time-series data report 4, 1992. In SOEST Technical Report 93-14 (p. 248). School of Ocean and Earth Science and Technology, University of Hawaii. https://hahana.soest.hawaii.edu/hot/reports/rep_y4.pdf",
     "Fukieki, L., Santiago-Mandujano, F., Fernando Carvalho Pacheco, Fitzgerald, D., Fitzgerald, D., & White, A. (2021). Hawaii ocean time-series data report 31: 2019 (pp. 1–426). School of Ocean and Earth Science and Technology Publication #11424. https://hahana.soest.hawaii.edu/hot/reports/rep_y31.pdf",
     "W. Brechner Owens, & Millard, R. C. (1985). A new algorithm for CTD oxygen calibration. Journal of Physical Oceanography, 15, 621–631. https://doi.org/2.0.CO;2>10.1175/1520-0485(1985)015<0621:ANAFCO>2.0.CO;2",
-    "Tupas, L., Santiago-Mandujando, F., Hebel, D., Nosse, C., Fujieki, L., Firing, E., Lukas, R., Karl, D., Winn, C., Bidigare, R., Landry, M., & Lopez, M. (1996). Hawaii ocean time-series data report 8, 1996 (pp. 1–286). School of Ocean and Earth Science and Technology, University of Hawaii. https://hahana.soest.hawaii.edu/hot/reports/rep_y8.pdf",
+    "Tupas, L., Santiago-Mandujando, F., Hebel, D., Nosse, C., Fujieki, L., Firing, E., Lukas, R., Karl, D., Win, C., Bidigare, R., Landry, M., & Lopez, M. (1996). Hawaii ocean time-series data report 8, 1996 (pp. 1–286). School of Ocean and Earth Science and Technology, University of Hawaii. https://hahana.soest.hawaii.edu/hot/reports/rep_y8.pdf",
     "Howard Paul Freitag, McCarty, M. E., Nosse, C., Lukas, R., McPhaden, M. J., & Cronin, M. F. (1999). COARE Seacat data: Calibrations and quality control procedures. NOAA Technical Memorandum ERL PMEL-115. https://repository.library.noaa.gov/view/noaa/10999",
     "Firing, E. (1991). Acoustic Doppler current profiling measurements and navigation. WOCE Hydrographic Operations and Methods. WOCE Operations Manual, WHP Office Report WHPO 91-1, WOCE Report No. 68/91; WOCE Hydrographic Programme. https://www.nodc.noaa.gov/archive/arc0013/0001873/1.1/data/1-data/publications/WOCE/ADCP.pdf",
     "Teledyne RD Instruments. (2011). Acoustic doppler current profiler principles of operation a practical primer. In P/N 951-6069-00 (pp. 1–62). http://www.teledynemarine.com/Documents/Brand%20Support/RD%20INSTRUMENTS/Technical%20Resources/Manuals%20and%20Guides/General%20Interest/BBPRIME.pdf",
@@ -238,5 +238,4 @@
     "Howe, B. M., Lukas, R., Duennebier, F., & Karl, D. (2011). ALOHA cabled observatory installation. 1–11. https://doi.org/10.23919/OCEANS.2011.6107301"
   ]
 }
-
 
