@@ -14,17 +14,17 @@ import os
 import sys
 from datetime import datetime
 
-sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath("."))
 
 # -- Project information -----------------------------------------------------
 
-project = 'WHOTS-{{cookiecutter.current_whots_deployment_number}}'
-copyright = f'{datetime.now().year}, Hawaii Ocean Time-series (HOT)'
-author = '{{cookiecutter.creator}}'
+project = "WHOTS-{{cookiecutter.current_whots_deployment_number}}"
+copyright = f"{datetime.now().year}, Hawaii Ocean Time-series (HOT)"
+author = "{{cookiecutter.creator}}"
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
-version = '0.0.1'
+release = "1.0.0"
+version = "1.0.0"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
@@ -37,10 +37,9 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinxcontrib.bibtex",
 ]
-
-bibtex_bibfiles = ['latex_templates/refs.bib']
-bibtex_default_style = 'unsrt'
-bibtex_reference_style = 'author_year'
+bibtex_bibfiles = ["latex_templates/refs.bib"]
+bibtex_default_style = "unsrt"
+bibtex_reference_style = "author_year"
 
 myst_url_schemes = ["http", "https"]
 
@@ -48,7 +47,7 @@ myst_url_schemes = ["http", "https"]
 myst_heading_anchors = 3
 
 # Add numbered roles
-numfig = True
+numfig = true
 
 # Enable some MyST extensions.
 myst_enable_extensions = [
@@ -56,24 +55,32 @@ myst_enable_extensions = [
 ]
 
 # Make sure the explicity target is unique
-autosectionlabel_prefix_document = True
+autosectionlabel_prefix_document = true
 autosectionlabel_maxdepth = 3
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown'
-}
-master_doc = 'index'
+
+templates_path = ["_templates"]
+source_suffix = {".rst": "restructuredtext", ".md": "markdown"}
+master_doc = "index"
+
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'build', 'Thumbs.db', '.DS_Store', '.env', '.rst']
+exclude_patterns = [
+    "_build",
+    "build",
+    "thumbs.db",
+    ".ds_store",
+    ".env",
+    ".rst",
+    "Thumbs.db",
+    ".DS_store",
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -81,26 +88,26 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 
 html_theme = "sphinx_book_theme"
-html_logo = "_static/_images/new_logo_HOT.png"
+html_logo = "_static/_images/new_logo_hot.png"
 html_title = "Data Report #{{cookiecutter.current_whots_deployment_number}}"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 html_theme_options = {
     "repository_url": "https://github.com/hot-dogs/whots{{cookiecutter.current_whots_deployment_number}}-data-report",
     "repository_branch": "main",
     "path_to_docs": "docs/source/",
-    "use_repository_button": True,
-    "use_issues_button": True,
-    "home_page_in_toc": False,
-    "use_edit_page_button": True,
+    "use_repository_button": true,
+    "use_issues_button": true,
+    "home_page_in_toc": false,
+    "use_edit_page_button": true,
 }
 
 # -- Options for LaTeX output ---------------------------------------------
-latex_engine = 'pdflatex'
+latex_engine = "pdflatex"
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -112,35 +119,31 @@ latex_additional_files = [
 ]
 
 latex_elements = {
-    'extraclassoptions': 'openany,oneside',
-    'papersize': 'a4paper',
-    # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup # 'fncychap': '\\usepackage[Lenny]{fncychap}',
-    'fncychap': '\\usepackage[Bjornstrup]{fncychap}',
-    'fontpkg': '\\usepackage{amsmath,amsfonts,amssymb,amsthm}',
-    'figure_align': 'htbp',
-    'pointsize': '10pt',
-
-    # ===================== PREAMBLE ======================================
-    'preamble': r'''
+    "extraclassoptions": "openany,oneside",
+    "papersize": "a4paper",
+    # sonny, lenny, glenn, conny, rejne, bjarne and bjornstrup # 'fncychap': '\\usepackage[lenny]{fncychap}',
+    "fncychap": "\\usepackage[bjornstrup]{fncychap}",
+    "fontpkg": "\\usepackage{amsmath,amsfonts,amssymb,amsthm}",
+    "figure_align": "htbp",
+    "pointsize": "10pt",
+    # ===================== preamble ======================================
+    "preamble": r"""
         \input{mystyle.sty}
         \usepackage[notocbib]{apacite}
-    ''',
-    # ============== COVER PAGE + TABLE OF CONTENTS  ======================
-    'maketitle': r''' 
+    """,
+    # ============== cover page + table of contents  ======================
+    "maketitle": r""" 
         \input{maketitle.sty}
-    ''',
-    # Latex figure (float) alignment
+    """,
+    # latex figure (float) alignment
     # 'figure_align': 'htbp',
-    'sphinxsetup': \
-        'hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
+    "sphinxsetup": "hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
         verbatimwithframe=true, \
-        TitleColor={rgb}{0,0,0}, \
-        HeaderFamily=\\rmfamily\\bfseries, \
-        InnerLinkColor={rgb}{0,0,1}, \
-        OuterLinkColor={rgb}{0,0,1}',
-
-    'tableofcontents': ' ',
-
+        titlecolor={rgb}{0,0,0}, \
+        headerfamily=\\rmfamily\\bfseries, \
+        innerlinkcolor={rgb}{0,0,1}, \
+        outerlinkcolor={rgb}{0,0,1}",
+    "tableofcontents": " ",
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -149,21 +152,26 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'whots{{cookiecutter.current_whots_deployment_number}}-data-report.tex',
-     u'WHOTS-{{cookiecutter.current_whots_deployment_number}}: Data Report',
-     u'{{cookiecutter.creator}}', 'manual'),
+    (
+        "index",
+        "whots{{cookiecutter.current_whots_deployment_number}}-data-report.tex",
+        "WHOTS-{{cookiecutter.current_whots_deployment_number}}: Data Report",
+        "{{cookiecutter.creator}}",
+        "manual",
+    ),
 ]
 # If false, no module index is generated.
-latex_domain_indices = True
+latex_domain_indices = true
 
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'whots-epub-test'
-epub_author = u'{{cookiecutter.creator}}'
-epub_publisher = u'{{cookiecutter.creator}}'
-epub_copyright = f'{{cookiecutter.created_on}}-{datetime.now().year}, {{cookiecutter.creator}}'
+epub_title = "whots-epub-test"
+epub_author = "{{cookiecutter.creator}}"
+epub_publisher = "{{cookiecutter.creator}}"
+epub_copyright = (
+    f"{{cookiecutter.created_on}}-{datetime.now().year}, {{cookiecutter.creator}}"
+)
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
-
+epub_exclude_files = ["search.html"]
