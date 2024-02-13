@@ -42,10 +42,8 @@
 %=======================================================================
 \usepackage{datetime}
 
-{% raw %}
 \newdateformat{MonthYearFormat}{%
     \monthname[\THEMONTH], \THEYEAR}
-{% endraw %}
 
 %=======================================================================
 % RO, LE will not work for 'oneside' layout.
@@ -100,7 +98,6 @@
 %=======================================================================
 % Quote Styles at the top of chapter
 %=======================================================================
-{% raw %}
 \usepackage{epigraph}
 \setlength{\epigraphwidth}{0.8\columnwidth}
 \newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
@@ -150,4 +147,3 @@
 %======================================================================
 \addto\captionsenglish{\renewcommand{\bibname}{References}}
 \phantomsection
-{% endraw %}
