@@ -201,12 +201,13 @@ YOUR_ACCESS_TOKEN` to your API requests.
    example of how you can upload a file using the Zenodo API in Python using the
    `requests` library:
 
+   Make sure to change doi/token/dates...
+
 ```bash
 conda install requests
 ```
 
 ```python
-
 import json
 from datetime import datetime
 
@@ -219,9 +220,26 @@ def get_formatted_date():
     return current_date_time.strftime("%Y-%m-%d")
 
 
+def testing_connection(deposition_url, ACCESS_TOKEN):
+    try:
+        r = requests.get(deposition_url, params={"access_token": ACCESS_TOKEN})
+        r.raise_for_status()  # Raises an exception for bad status codes (4xx, 5xx)
+        response_json = r.json()
+        deposition_id = response_json["id"]
+        bucket_url = response_json["links"]["bucket"]
+        doi = response_json["metadata"]["doi"]
+        return deposition_id, doi, bucket_url
+
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
+        return None, None, None
+
+
 # Function to create an empty upload and obtain the deposition_id
+
+
 def create_empty_upload():
-    deposition_url = "https://sandbox.zenodo.org/api/deposit/depositions"
+    deposition_url = "https://zenodo.org/api/deposit/depositions"
     headers = {"Content-Type": "application/json"}
 
     params = {"access_token": ACCESS_TOKEN, "prereserve_doi": "true"}
@@ -242,9 +260,17 @@ def add_metadata(deposition_id, doi, formatted_date):
     data = {
         "metadata": {
             "title": "Hydrographic Observations at the Woods Hole Oceanographic Institution Hawaii Ocean Time-Series Site (WHOTS):  2021 - 2022, Data Report #17",
-            "In 2003, Robert Weller (Woods Hole Oceanographic Institution [WHOI]), Albert Plueddemann (WHOI),and Roger Lukas (the University of Hawaii [UH]) proposed to establish a long-term surface mooring at the Hawaii             Ocean Time-series (HOT) Station ALOHA (22°45’N, 158°W) to provide             sustained, high-quality air-sea fluxes and the associated upper             ocean response as a coordinated part of the HOT program, and as an             element of the global array of ocean reference stations supported             by the National Oceanic and Atmospheric Administration’s (NOAA)             Office of Climate Observation.               The WHOTS-17 mooring was deployed on August 26, 2021 (WHOTS-17 cruise) and was recovered on July 25, 2022 (WHOTS-18 cruise). The cruises were             aboard the R/V Oscar Elton Settle. The WHOTS-18 mooring was             deployed on July 24, 2022, during the WHOTS-18 cruise and was             recovered on June 19, 2023, during the WHOTS-19 cruise.              This report documents and describes the oceanographic observations made on the WHOTS-17 mooring for nearly eleven months and from shipboard measurements during the two cruises when the mooring was deployed and recovered. Sections II and III include a detailed description of the cruises and the mooring, respectively. Sampling and processing procedures of the hydrographic casts, thermosalinograph, and shipboard ADCP data collected during these cruises are described in Section IV. Section V includes the processing procedures for the data collected by the moored instruments: SeaCATs, MicroCATs, Moored ADCPs and VMCM. Plots of the resulting data and preliminary analysis are presented in Section VI.",
+            "description": "In 2003, Robert Weller (Woods Hole Oceanographic Institution [WHOI]), Albert Plueddemann (WHOI), and Roger Lukas (the University of Hawaii [UH]) proposed to establish a long-term surface mooring at the Hawaii Ocean Time-series (HOT) Station ALOHA (22°45’N, 158°W) to provide sustained, high-quality air-sea fluxes and the associated upper ocean response as a coordinated part of the HOT program, and as an element of the global array of ocean reference stations supported  by the National Oceanic and Atmospheric Administration’s (NOAA) Office of Climate Observation. The WHOTS-17 mooring was deployed on August 26, 2021 (WHOTS-17 cruise) and was recovered on July 25, 2022 (WHOTS-18 cruise). The cruises were aboard the R/V Oscar Elton Settle. The WHOTS-18 mooring was deployed on July 24, 2022, during the WHOTS-18 cruise and was recovered on June 19, 2023, during the WHOTS-19 cruise. This report documents and describes the oceanographic observations made on the WHOTS-17 mooring for nearly eleven months and from shipboard measurements during the two cruises when the mooring was deployed and recovered. Sections II and III include a detailed description of the cruises and the mooring, respectively. The sampling and processing procedures of the hydrographic casts, thermosalinograph, and shipboard ADCP data collected during these cruises are described in Section IV. Section V includes the processing procedures for the data collected by the moored instruments: SeaCATs, MicroCATs, Moored ADCPs, and VMCM. Plots of the resulting data and preliminary analysis are presented in Section VI.",
+            "dates": [
+                {
+                    "start": "2021-08-26",
+                    "end": "2022-07-25",
+                    "type": "Collected",
+                    "description": "The WHOTS-17 mooring was deployed on August 26, 20221, and was recovered on July 25, 2022, during the WHOTS-18 cruise",
+                }
+            ],
             "upload_type": "publication",
-            "publication_type": "softwaredocumentation",
+            "publication_type": "report",
             "publication_date": formatted_date,
             "access_right": "open",
             "license": "CC-BY-4.0",
@@ -260,8 +286,8 @@ def add_metadata(deposition_id, doi, formatted_date):
                 "timeseries",
                 "physical oceanography",
             ],
-            "version": "0.0.1",
-            "notes": "This publication is based upon observations from the WHOI-Hawaii Ocean Time-series Site (WHOTS) mooring, which is supported in part by the National Oceanic and Atmospheric Administration (NOAA) Global Ocean Monitoring and Observing (GOMO) Program through the Cooperative Institute for the North Atlantic Region (CINAR) under Cooperative Agreement NA14OAR4320158. NOAA CPO FundRef number 100007298 to the Woods Hole Oceanographic Institution, and by National Science Foundation grants OCE-0327513,OCE-0752606, OCE-0926766, OCE-1260164 and OCE-1756517 to the University of Hawaii for the Hawaii Ocean Time-series. This is SOEST contribution number xxxxxxxxx",
+            "version": "1.0.0",
+            "notes": "This publication is based upon observations from the WHOI-Hawaii Ocean Time-series Site (WHOTS) mooring, which is supported in part by the National Oceanic and Atmospheric Administration (NOAA) Global Ocean Monitoring and Observing (GOMO) Program through the Cooperative Institute for the North Atlantic Region (CINAR) under Cooperative Agreement NA14OAR4320158. NOAA CPO FundRef number 100007298 to the Woods Hole Oceanographic Institution, and by National Science Foundation grants OCE-0327513, OCE-0752606, OCE-0926766, OCE-1260164 and OCE-1756517 to the University of Hawaii for the Hawaii Ocean Time-series. This is SOEST contribution number 11768.",
             "communities": [{"identifier": "hot"}],
             "grants": [
                 {"id": "10.13039/100000001::0327513"},
@@ -281,9 +307,15 @@ def add_metadata(deposition_id, doi, formatted_date):
             "related_identifiers": [
                 {
                     "scheme": "url",
+                    "identifier": "https://github.com/hot-dogs/whots17-data-report",
+                    "relation": "isSupplementTo",
+                    "resource_type": "software",
+                },
+                {
+                    "scheme": "url",
                     "identifier": "http://whots17-data-report.readthedocs.io/",
                     "relation": "isDocumentedBy",
-                    "resource_type": "publication-softwaredocumentation",
+                    "resource_type": "publication-report",
                 },
                 {
                     "scheme": "url",
@@ -461,16 +493,7 @@ def add_metadata(deposition_id, doi, formatted_date):
         }
     }
 
-    # r = requests.put(
-    #     "https://sandbox.zenodo.org/api/deposit/depositions/%s" % deposition_id,
-    #     params={"access_token": ACCESS_TOKEN},
-    #     data=json.dumps(data),
-    #     headers=headers,
-    # )
-    #
-    # r.status_code
-
-    url = f"https://sandbox.zenodo.org/api/deposit/depositions/{deposition_id}"
+    url = f"https://zenodo.org/api/deposit/depositions/{deposition_id}"
     r = requests.put(
         url,
         params={"access_token": ACCESS_TOKEN},
@@ -485,11 +508,18 @@ def add_metadata(deposition_id, doi, formatted_date):
 
 
 def upload_file_to_bucket(bucket_url, filename, params):
-    path = f"/Users/fcp/Pictures/{filename}"
+    # path = f"/Users/fcp/Pictures/{filename}"
+    path = f"/Users/fcp/Downloads/{filename}"
 
+    # with open(path, "rb") as fp:
+    #    r = requests.put(
+    #        f"{bucket_url}/{filename}",
+    #        data=fp,
+    #        params=params,
+    #    )
     with open(path, "rb") as fp:
         r = requests.put(
-            f"{bucket_url}/{filename}",
+            "%s/%s" % (bucket_url, filename),
             data=fp,
             params=params,
         )
@@ -498,7 +528,7 @@ def upload_file_to_bucket(bucket_url, filename, params):
 
 # # PUBLISH:
 # r = requests.post(
-#     "https://sandbox.zenodo.org/api/deposit/depositions/%s/actions/publish"
+#     "https://zenodo.org/api/deposit/depositions/%s/actions/publish"
 #     % deposition_id,
 #     params={"access_token": ACCESS_TOKEN},
 # )
@@ -507,20 +537,33 @@ def upload_file_to_bucket(bucket_url, filename, params):
 
 
 if __name__ == "__main__":
-    ACCESS_TOKEN = "change_your_access_token_here"
+    ACCESS_TOKEN = "CHANGE_THIS_WITH_YOUR_TOKEN"
     params = {"access_token": ACCESS_TOKEN}
+    change_doi = CHANGE_THIS_WITH_MOST_RECENT_DOI_NUMBER
+    deposition_url = f"https://zenodo.org/api/deposit/depositions/{change_doi}"
 
+    # TEST CONNECTION
+    deposition_id, doi, bucket_url = testing_connection(deposition_url, ACCESS_TOKEN)
+
+    # GET DATE
     formatted_date = get_formatted_date()
-    deposition_id, doi, bucket_url = create_empty_upload()
+
+    # CREATE AN EMPTY UPLOAD
+    # deposition_id, doi, bucket_url = create_empty_upload()
+
+    # CHECK STATUS
     status_code = add_metadata(deposition_id, doi, formatted_date)
 
     # Uncomment the line below to upload a file to the bucket
-    # file_upload_status_code = upload_file_to_bucket(
-    #     bucket_url, "addfilehereifnecessary.jpg", params)
+    # Add the .pdf file as well!!
+    file_upload_status_code = upload_file_to_bucket(
+        bucket_url, "whots17-data-report-1.0.0.zip", params
+    )
 
     # Uncomment the line below to publish the deposition
     # publish_status_code = publish_deposition(deposition_id)
 
-    print("prereserve_doi =", doi)
+    print("doi =", doi)
     print("Metadata status code:", status_code)
+
 ```
