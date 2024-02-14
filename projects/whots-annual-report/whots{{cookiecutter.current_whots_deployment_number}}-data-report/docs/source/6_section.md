@@ -170,7 +170,7 @@ panels] Same as in {numref}`figure6.1`, but for station 52, cast 2.
 :align: center
 :name: figure6.5
 
-Upper panels] Same as in {numref}`figure6.1`, but for station 52, cast 3.[Lower
+[Upper panels] Same as in {numref}`figure6.1`, but for station 52, cast 3.[Lower
 panels] Same as in {numref}`figure6.1`, but for station 52, cast 4.
 ```
 
@@ -194,7 +194,7 @@ right panel] Same as in the upper right panel, but station 20 cast 1.
 :align: center
 :name: figure6.7
 
-Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
+[Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 1.[Lower panels] Same as in {numref}`figure6.6`, but for station 50, cast 2.
 ```
 
@@ -203,7 +203,7 @@ Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 :align: center
 :name: figure6.8
 
-Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
+[Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 3.[Lower panels] Same as in {numref}`figure6.6`, but for station 50, cast 4.
 ```
 
@@ -212,7 +212,7 @@ Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 :align: center
 :name: figure6.9
 
-Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
+[Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 5.[Lower panels] Same as in {numref}`figure6.6`, but for station 50, cast 6.
 ```
 
@@ -221,7 +221,7 @@ Upper panels] Same as in {numref}`figure6.6`, but for station 50, cast
 :align: center
 :name: figure6.10
 
-Upper panels] Same as in {numref}`figure6.6`, but for station 52, cast 1.
+[Upper panels] Same as in {numref}`figure6.6`, but for station 52, cast 1.
 [Lower panels] Same as in {numref}`figure6.6`, but for station 52, cast 2.
 ```
 
