@@ -1,6 +1,5 @@
 # WHOTS ({{cookiecutter.current_whots_deployment_number}}-{{cookiecutter.next_whots_deployment}}) Cruise Shipboard Observations
 
-
 The hydrographic profile observations made during the WHOTS cruises were
 obtained with a Sea-Bird CTD package with dual temperature, salinity, and
 oxygen sensors. This CTD was installed on a rosette-sampler with 5 L Niskin
@@ -53,7 +52,7 @@ the WHOTS Data Report 1 {cite}`Santiago-Mandujano2007`. Data alignment,
 averaging, correction, and reporting were done as described in
 {cite}`Tupas1993`. Spikes in the data occur when the CTD samples the disturbed
 water of its wake. Therefore, the downcast samples were rejected when the CTD
-was moving upward or when its acceleration exceeded 0.5 m s-2 in magnitude. The
+was moving upward or when its acceleration exceeded 0.5 {math}`ms^{-2} in magnitude. The
 data were subsequently averaged into 2-dbar pressure bins after calibrating the
 CTD conductivity with the bottle salinities.
 
@@ -65,7 +64,7 @@ commonly contaminate upcast data.
 
 Temperature is reported on the ITS-90 scale. Salinity and all derived units
 were calculated using the UNESCO (1981) routines; salinity is reported in the
-Practical Salinity(SA) scale (PSS-78). Oxygen is reported in umol kg-1.
+Practical Salinity(SA) scale (PSS-78). Oxygen is reported in {math}`\mu mol\kg^{-1}`.
 
 ### CTD Sensor Calibration and Corrections
 
@@ -187,7 +186,7 @@ against bottle data, as explained below.
 Daily files containing navigation data recorded every second were concatenated
 with the thermosalinograph data. The thermosalinograph data were then screened
 for gross errors, with upper and lower bounds of 18°C and 35°C for
-temperature and 3 and 6 Siemens/m for conductivity. There were 92 points
+temperature and 3 and 6 Siemens {math}`m^{-1}` for conductivity. There were 92 points
 outside the valid temperature range and no points outside the valid
 conductivity range.
 
@@ -195,9 +194,9 @@ A 5-point running median filter was used to detect one- or two-point
 temperature and conductivity glitches in the thermosalinograph data. Glitches
 in temperature and conductivity detected by the 5-point median filter were
 immediately replaced by the median. Threshold values of 0.3°C for temperature
-and 0.1 Siemens/m for conductivity were used for the median filter. After
-running the filter, there were 13 internal temperature, 100 external 
-temperature, and 913 conductivity points replaced with the median.  
+and 0.1 Siemens {math}`m^{-1}` for conductivity were used for the median filter. After
+running the filter, there were 13 internal temperature, 100 external
+temperature, and 913 conductivity points replaced with the median.
 
 A 3-point triangular running mean filter was used to smooth the temperature and
 conductivity data after passing the glitch detection.
@@ -209,7 +208,7 @@ causing the pumps to stop working.
 
 Data were visually scanned to flag spikes likely caused by contamination due to
 the introduction of bubbles to the flow-through system during transits or rough
-conditions. Of 69,311,136 data points, 141,365 conductivity data points were 
+conditions. Of 69,311,136 data points, 141,365 conductivity data points were
 flagged as bad.
 
 #### Bottle salinity and CTD Salinity Comparisons
@@ -250,13 +249,13 @@ CTD - thermosalinograph difference was -0.0028 psu with a standard deviation of
 
 There were 11 CTD casts conducted during WHOTS-{{cookiecutter.current_whots_deployment_number}}, one of which was a test cast
 offshore Honolulu (Station 20) and five at Station {{cookiecutter.current_whots_deployment_station}} (WHOTS-{{cookiecutter.current_whots_deployment_number}}), and five at
-Station {{cookiecutter.previous_whots_deployment_station}} (WHOTS-{{cookiecutter.previous_whots_deployment}}), respectively. 
-The 4 dbar downcast CTD temperature data from those casts were used to compare 
-with the thermosalinograph data at the time of the casts. This comparison gives 
-an estimate of the quality of the thermosalinograph measurements. Of the 11 
-casts, five were identified as temperature outliers after comparing it against 
-the thermosalinograph data and removed from the analysis. The mean difference 
-between the CTD and the internal temperature sensor was 0.058°C, with a 
+Station {{cookiecutter.previous_whots_deployment_station}} (WHOTS-{{cookiecutter.previous_whots_deployment}}), respectively.
+The 4 dbar downcast CTD temperature data from those casts were used to compare
+with the thermosalinograph data at the time of the casts. This comparison gives
+an estimate of the quality of the thermosalinograph measurements. Of the 11
+casts, five were identified as temperature outliers after comparing it against
+the thermosalinograph data and removed from the analysis. The mean difference
+between the CTD and the internal temperature sensor was 0.058°C, with a
 standard deviation of ± 0.056°C.
 
 ### WHOTS-{{cookiecutter.next_whots_deployment}} Cruise
@@ -297,15 +296,15 @@ explained below.
 Daily files containing navigation data recorded every second were concatenated
 with the thermosalinograph data. The thermosalinograph data were then screened
 for gross errors, with upper and lower bounds of 18°C and 35°C for
-temperature and 3 and 6 Siemens m -1 for conductivity. There were 488 points
-outside the valid temperature range and no points outside the valid 
+temperature and 3 and 6 Siemens {math}`m^{-1}` for conductivity. There were 488 points
+outside the valid temperature range and no points outside the valid
 conductivity range.
 
 A 5-point running median filter was used to detect one- or two-point
 temperature and conductivity glitches in the thermosalinograph data. Glitches
 in temperature and conductivity detected by the 5-point median filter were
 immediately replaced by the median. Threshold values of 0.3°C for temperature
-and 0.1 Siemens m-1 for conductivity were used for the median filter. After
+and 0.1 Siemens {math}`m^{-1}` for conductivity were used for the median filter. After
 running the filter, there were 283 internal temperature, 1998 external
 temperature, and 341 conductivity points replaced by the median. A 3-point
 triangular running mean filter was used to smooth the temperature and
@@ -321,7 +320,7 @@ and the flow through the system was stopped during that time.
 
 Data were visually scanned to flag spikes likely caused by contamination due to
 the introduction of bubbles to the flow-through system during transits or rough
-conditions. Of 649,826 data points, 133,851 conductivity data points were 
+conditions. Of 649,826 data points, 133,851 conductivity data points were
 flagged as bad.
 
 #### Bottle salinity and CTD Salinity Comparisons
@@ -354,22 +353,22 @@ and TSG conductivity, and a correction was obtained for the TSG conductivities.
 Salinity was calculated using these corrected conductivities, the
 thermosalinograph temperatures, and ten dbar pressure. After applying
 corrections, the mean difference between the bottle and thermosalinograph
-salinities was less than 1 mpsu with a standard deviation of 0.000662 psu. The 
-mean CTD - thermosalinograph difference was -0.00018 psu with a standard 
+salinities was less than 1 mpsu with a standard deviation of 0.000662 psu. The
+mean CTD - thermosalinograph difference was -0.00018 psu with a standard
 deviation of 0.00124 psu.
 
 #### CTD Temperature Comparisons
 
 There were ten CTD casts conducted during WHOTS-{{cookiecutter.next_whots_deployment}}, one of which was a test
 cast offshore Honolulu (Station 20), one at Aloha Station (Station 2), five at
-Station {{cookiecutter.next_whots_deployment_station}} (WHOTS-{{cookiecutter.next_whots_deployment}}), and 
+Station {{cookiecutter.next_whots_deployment_station}} (WHOTS-{{cookiecutter.next_whots_deployment}}), and
 two at Station {{cookiecutter.current_whots_deployment_station}} (WHOTS-{{cookiecutter.current_whots_deployment_number}}). The 4 dbar downcast
 CTD temperature data from those casts were used to compare with the
 thermosalinograph data at the time of the casts. This comparison gives an
 estimate of the quality of the thermosalinograph measurements. Of the ten
-casts, two were identified as temperature outliers after comparing it 
-against the thermosalinograph data and removed from the analysis. The mean 
-difference between the CTD and the internal temperature sensor was 
+casts, two were identified as temperature outliers after comparing it
+against the thermosalinograph data and removed from the analysis. The mean
+difference between the CTD and the internal temperature sensor was
 -0.247°C, with a standard deviation of ± 0.067°C.
 
 ## Shipboard ADCP
@@ -414,3 +413,4 @@ WHOTS-{{cookiecutter.next_whots_deployment}} moorings. The broadband system only
 |                File starting time                | 08/20/21 01:22:22 | 08/20/21 01:22:22 |
 |                 File ending time                 | 09/01/21 19:44:41 | 09/01/21 19:44:41 |
 ```
+
