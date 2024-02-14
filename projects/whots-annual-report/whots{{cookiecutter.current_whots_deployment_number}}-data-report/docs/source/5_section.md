@@ -2,7 +2,6 @@
 
 ## MicroCAT Data Processing Procedures
 
-
 Each moored MicroCAT temperature, conductivity, and pressure (when installed)
 was calibrated at Sea-Bird before their deployment and after their recovery on
 the dates shown in {numref}`table-14`. The internally-recorded data from each
@@ -14,8 +13,7 @@ stability, and conductivity calibration against CTD data from casts conducted
 near the mooring during HOT and WHOTS cruises. The detailed processing
 procedures are described in this section.
 
-
-```{table} WHOTS-{{cookiecutter.current_whots_deployment_number}} MicroCAT temperature sensor calibration dates and sensor drift during deployments; *SN = Sea-Bird Serial Number; PDC = Pre-Deployment Calibration; PRC = Post-Recovery Calibration; TSA = Temperature Sensor's Annual Drift during WHOTS-{{cookiecutter.current_whots_deployment_number}} ; N. depth = Nominal deployment depth* 
+```{table} WHOTS-{{cookiecutter.current_whots_deployment_number}} MicroCAT temperature sensor calibration dates and sensor drift during deployments; *SN = Sea-Bird Serial Number; PDC = Pre-Deployment Calibration; PRC = Post-Recovery Calibration; TSA = Temperature Sensor's Annual Drift during WHOTS-{{cookiecutter.current_whots_deployment_number}} ; N. depth = Nominal deployment depth*
 :class: sd-m-auto
 :align: center
 :name: table-14
@@ -48,8 +46,8 @@ procedures are described in this section.
 Before the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring deployment and after its recovery (before the data
 logging was stopped), the MicroCATs temperature sensors were placed in contact
 with an ice pack to create a spike in the data, to check for any problems with
-their internal clocks, and for possible missing samples ({numref}`table-8`). 
-However, it was found after recovery that all the instruments had stopped logging data 
+their internal clocks, and for possible missing samples ({numref}`table-8`).
+However, it was found after recovery that all the instruments had stopped logging data
 due to battery drainage, except for the deep instruments.
 The cold spike before deployment was detected by a sudden decrease in temperature. For all the
 instruments, the clock time of this event matched the time of the spike (within
@@ -100,7 +98,6 @@ position {cite}`Santiago-Mandujano2007`.
 |   **4713**    | 11391  |      0.5      |       2       |
 |   **4713**    | 12241  |      0.4      |      1.5      |
 ```
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}pbias_a.png
 :height: 1000px
@@ -153,12 +150,11 @@ conducted to evaluate the temperatures from those sensors.
 #### Comparisons with VMCM and ADCP temperature sensors
 
 The upper panel of {numref}`figure5.3` shows the difference between the 10-m
-VMCM and the 7-m MicroCAT temperatures during WHOTS-{{cookiecutter.current_whots_deployment_number}}, after adding a 0.0259°C 
+VMCM and the 7-m MicroCAT temperatures during WHOTS-{{cookiecutter.current_whots_deployment_number}}, after adding a 0.0259°C
 offset correction to the VMCM. The offset was the mean difference between
 the uncorrected VMCM and the 7-m MicroCAT data. Also shown for comparison in
 the middle panel of the figure are the corrected VMCM temperature differences
-from the 15 m MicroCAT. The VMCM temperatures had a 0.04 °C offset in April
-2020. The lower panel shows the temperature fluctuations in the differences
+from the 15 m MicroCAT. The VMCM temperatures had a 0.04 °C offset in April 2020. The lower panel shows the temperature fluctuations in the differences
 between the 7 and 15-m MicroCATs, which seem to be around zero.
 
 Temperature differences between the 30-m VMCM and the temperatures from
@@ -171,8 +167,8 @@ temperatures are also shown in the lower panel.
 Temperature differences between the 47.5-m ADCP and the temperatures from
 adjacent MicroCATs at 45 and 50-m during WHOTS-{{cookiecutter.current_whots_deployment_number}} are shown in
 {numref}`figure5.5`. The ADCP failed and stopped collecting data on January
-21, 2020 (see {ref}`/3_section.md#description-of-whots-{{cookiecutter.current_whots_deployment_number}}-mooring`). For 
-comparison, the differences between the MicroCATs temperatures are also 
+21, 2020 (see {ref}`/3_section.md#description-of-whots-{{cookiecutter.current_whots_deployment_number}}-mooring`). For
+comparison, the differences between the MicroCATs temperatures are also
 shown in the lower panel.
 
 Temperature differences between the 125-m ADCP and the temperatures from
@@ -196,7 +192,6 @@ the 7-m and the 15-m MicroCATs (lower panel ) during the WHOTS-{{cookiecutter.cu
 The light blue line is a 24-hour running mean of the differences.
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}tcompare_33.png
 :height: 1000px
 :align: center
@@ -207,8 +202,6 @@ panel); between the 35-m MicroCAT and the 30-m VMCM (middle panel); and between
 the 25-m and the 35-m MicroCATs (lower panel) during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment.
 The light blue line is a 24-hour running mean of the differences.
 ```
-
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}tcompare_4.png
 :height: 1000px
@@ -221,7 +214,6 @@ MicroCAT and the 47.5-m ADCP (middle panel); and between the 45-m and the 50-m
 MicroCATs (lower panel) during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment. The light blue line is
 a 24-hour running mean of the differences.
 ```
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}tcompare_5.png
 :height: 1000px
@@ -244,7 +236,7 @@ and 5 km from the mooring during HOT cruises. The conductivity offsets are not
 apparent, and there may have been multiple causes ( see {cite}`Freitag1999`
 for a similar experience with conductivity cells during COARE). For some
 instruments, the offset was negative, caused perhaps by biofouling of the
-conductivity cell. In contrast, for others, the offset was positive, for 
+conductivity cell. In contrast, for others, the offset was positive, for
 reasons still unknown. A visual
 inspection of the instruments after recovery did not show any apparent signs of
 biofouling. There were no cell scourings reported in the post-recovery reviews
@@ -286,12 +278,12 @@ between neighboring instruments was calculated using finite differences. Over-
 or under-corrected conductivities yielded instabilities in the water column (
 negative buoyancy frequency) that were easy to detect and were not real when
 lasting for several days. Based on this, the conductivity correction of the
-corresponding sensors was revised. 
+corresponding sensors was revised.
 
-Correction of the deep and the near-bottom MicroCATs' conductivities were done following 
-similar procedures than for the shallow instruments, by comparing them 
-against CTD data from near-bottom profiles conducted during HOT cruises 
-({numref}`figure5.7`, bottom panel). After correction, the salinity 
+Correction of the deep and the near-bottom MicroCATs' conductivities were done following
+similar procedures than for the shallow instruments, by comparing them
+against CTD data from near-bottom profiles conducted during HOT cruises
+({numref}`figure5.7`, bottom panel). After correction, the salinity
 differences between both instruments were in the ±0.001 range.
 
 Another characteristic of the offsets in the conductivity sensors is that their
@@ -316,7 +308,6 @@ the differences before (after) correcting the data following the text's
 procedures.
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr1.jpg
 :height: 1000px
 :align: center
@@ -325,7 +316,6 @@ procedures.
 Conductivity sensor corrections for MicroCATs from 1 to 7 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 ```
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr2.jpg
 :height: 1000px
@@ -336,7 +326,6 @@ Conductivity sensor corrections for MicroCATs from 15 to 35 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr3.jpg
 :height: 1000px
 :align: center
@@ -345,7 +334,6 @@ WHOTS-{{cookiecutter.current_whots_deployment_number}}
 Conductivity sensor corrections for MicroCATs from 40 to 50 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}
 ```
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr4.jpg
 :height: 1000px
@@ -356,7 +344,6 @@ Conductivity sensor corrections for MicroCATs from 55 to 75 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr5.jpg
 :height: 1000px
 :align: center
@@ -365,7 +352,6 @@ WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 Conductivity sensor corrections for MicroCATs from 85 to 105 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 ```
-
 
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr6.jpg
 :height: 1000px
@@ -376,7 +362,6 @@ Conductivity sensor corrections for MicroCATs from 120 to 155 meters during
 WHOTS-{{cookiecutter.current_whots_deployment_number}}
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr7.jpg
 :height: 1000px
 :align: center
@@ -386,7 +371,6 @@ Conductivity sensor corrections for MicroCATs at 1875 and 4713 meters
 during WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 ```
 
-
 ```{figure} figures/microcats/w{{cookiecutter.current_whots_deployment_number}}mic_corr8.jpg
 :height: 1000px
 :align: center
@@ -394,7 +378,6 @@ during WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 
 Conductivity sensor correction for MicroCAT at 4713 meters during WHOTS-{{cookiecutter.current_whots_deployment_number}}
 ```
-
 
 ## Acoustic Doppler Current Profiler
 
@@ -439,7 +422,7 @@ third direction, is rotated once more to check the calibration. Results from
 each pre-deployment field calibration are shown in {numref}`table-17` and
 {numref}`table-18` ({numref}`figure5.16` and {numref}`figure5.17`).
 
-```{table}  Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} pre-deployment 300 kHz ADCP compass field calibration procedure. *SCE = Single Cycle Error (°); DCE = Double Cycle Error (°); LD_SCE = Largest Double + Single Cycle Error (°); RMS_RE = RMS of 3rd Order and Higher + Random Error (°); OE = Overall Error (°); PM_STD = Pitch, Mean and St. Deviation (°); RM_STD = Roll, Mean and St. Dev. (°)*
+```{table} Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} pre-deployment 300 kHz ADCP compass field calibration procedure. *SCE = Single Cycle Error (°); DCE = Double Cycle Error (°); LD_SCE = Largest Double + Single Cycle Error (°); RMS_RE = RMS of 3rd Order and Higher + Random Error (°); OE = Overall Error (°); PM_STD = Pitch, Mean and St. Deviation (°); RM_STD = Roll, Mean and St. Dev. (°)*
 :class: sd-m-auto
 :align: center
 :name: table-17
@@ -465,10 +448,10 @@ After the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was rec
 tested at the University of Hawai’i’s soccer field at Manoa on September 9,
 2021, with an identical compass calibration procedure as during the
 pre-deployment calibration. Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} post-deployment ADCP
-compass field calibration procedure are listed in {numref}`table-19` and 
+compass field calibration procedure are listed in {numref}`table-19` and
 {numref}`table-20` ({numref}`figure5.16` and {numref}`figure5.17`).
 
-```{table} Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} post-deployment 300kHz ADCP compass field calibration procedure. See acronyms on [Table 5.4](table-17) 
+```{table} Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} post-deployment 300kHz ADCP compass field calibration procedure. See acronyms on [Table 5.4](table-17)
 :class: sd-m-auto
 :align: center
 :name: table-19
@@ -477,8 +460,7 @@ compass field calibration procedure are listed in {numref}`table-19` and
 |    **After**    |   2.00    |   0.05    |     2.05     |     0.15     |   2.00   |  -0.03 ±0.40  |  0.13±0.49   |
 ```
 
-
-```{table} Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} post-deployment 600kHz ADCP compass field calibration procedure. See acronyms on [Table 5.4](table-17) 
+```{table} Results from the WHOTS-{{cookiecutter.current_whots_deployment_number}} post-deployment 600kHz ADCP compass field calibration procedure. See acronyms on [Table 5.4](table-17)
 :class: sd-m-auto
 :align: center
 :name: table-20
@@ -486,7 +468,6 @@ compass field calibration procedure are listed in {numref}`table-19` and
 |:---------------:|:---------:|:---------:|:------------:|:------------:|:--------:|:------------:|:------------:|
 |    **After**    |   0.99    |   0.23    |     1.21     |     0.19     |   1.07   |  0.10 ±0.43  |  0.47±0.41   |
 ```
-
 
 ```{figure} figures/adcp_moored/adcp_whot{{cookiecutter.current_whots_deployment_number}}cmpserr_sn4891.png
 :height: 600px
@@ -496,8 +477,6 @@ compass field calibration procedure are listed in {numref}`table-19` and
 Results of the post-cruise compass calibration, conducted September 9, 2021,
 on ADCP SN 4891 at the University of Hawai’i at Manoa.
 ```
-
-
 
 ```{figure} figures/adcp_moored/adcp_whot{{cookiecutter.current_whots_deployment_number}}cmpserr_sn1825.png
 :height: 600px
@@ -564,7 +543,6 @@ recovery time. The red line represents the anchor release and acoustic release
 trigger for deployment and recovery, respectively.
 ```
 
-
 ```{figure} figures/adcp_moored/600_rawt_plt.png
 :height: 500px
 :align: center
@@ -572,7 +550,6 @@ trigger for deployment and recovery, respectively.
 
 Same as {numref}`figure5.18`, but for the 600 kHz ADCP.
 ```
-
 
 ```{table} ADCP record times (UTC mm/dd/yyyy, hh:mm:ss) during WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment
 :class: sd-m-auto
@@ -601,16 +578,15 @@ spectrum analysis. A drift correction needs to be applied in those cases.
 
 #### Heading Bias
 
-
 As mentioned in the ADCP configuration section, the data were recorded in the
 earth coordinates. A heading bias, the angle between magnetic north and true
 north, can be included in the setup to obtain output data in true-earth
-coordinates. Magnetic variation was obtained from the 
+coordinates. Magnetic variation was obtained from the
 [National Geophysical Data Center ‘Geomag’ calculator](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml#declination)
 . A constant value is acceptable for a yearlong deployment because the change
-in declination is small, approximately -0.02°{math}`year^{-1}` at the 
-WHOTS 
-location. A heading bias of 9.54° was entered in the setup of the WHOTS-{{cookiecutter.current_whots_deployment_number}} 
+in declination is small, approximately -0.02°{math}`year^{-1}` at the
+WHOTS
+location. A heading bias of 9.54° was entered in the setup of the WHOTS-{{cookiecutter.current_whots_deployment_number}}
 ADCP’s.
 
 #### Speed of sound
@@ -637,9 +613,9 @@ Sound speed profile (top panel) during the deployment of the WHOTS-{{cookiecutte
 from 2 dbar CTD data taken during regular HOT cruises and CTD profiles taken
 during the WHOTS-{{cookiecutter.current_whots_deployment_number}} and -{{cookiecutter.next_whots_deployment}}) deployment cruises (individual casts marked with a
 red diamond). The bottom left panels show the sound velocity at a depth of the
-ADCP’s (47.5 m and 125 m), with the mean sound velocity indicated with a 
-dashed black line. The lower right panels show the temperature and salinity 
-at each ADCP depth for the time series, with the mean temperatures 
+ADCP’s (47.5 m and 125 m), with the mean sound velocity indicated with a
+dashed black line. The lower right panels show the temperature and salinity
+at each ADCP depth for the time series, with the mean temperatures
 indicated with blue lines and mean salinity indicated with red lines.
 ```
 
@@ -660,8 +636,7 @@ procedures were applied to the WHOTS-{{cookiecutter.current_whots_deployment_num
    blanking interval is expressed as a distance. The default value of 1.76 m
    was used for the 300 kHz ADCP, whereas an interval of 0.88 m was used for
    the 600 kHz ADCP. As a result, bin one was flagged and replaced with ` Not a
-   Number (NaN)` in the quality-controlled dataset ({numref}`figure5.21`).
-
+Number (NaN)` in the quality-controlled dataset ({numref}`figure5.21`).
 
    ```{figure} figures/adcp_moored/wh{{cookiecutter.current_whots_deployment_number}}_ringing.png
    :height: 600px
@@ -702,7 +677,7 @@ procedures were applied to the WHOTS-{{cookiecutter.current_whots_deployment_num
    be used to create the earth coordinate velocities. The percent good fields
    show the percentage of data made using 4 and 3 beam solutions in each depth
    cell within an ensemble and the percentage that was rejected due to failing
-   one of the criteria set during the instrument setup (see 
+   one of the criteria set during the instrument setup (see
    {ref}`/appendices.md#whots-{{cookiecutter.current_whots_deployment_number}}-300-khz-serial-4891`). Data were flagged when
    data in each depth cell within an ensemble made from 3 or 4 beam solutions
    was 20% or less.
@@ -730,7 +705,6 @@ procedures were applied to the WHOTS-{{cookiecutter.current_whots_deployment_num
    are possibly fish swimming in the beams based on the histograms of the
    partially cleaned data; depth cells with an absolute value of vertical
    velocity greater than {math}`0.3 ms^{-1}` were flagged.
-
 
    ```{figure} figures/adcp_moored/wh{{cookiecutter.current_whots_deployment_number}}_300_vv_hist.png
    :height: 600px
@@ -789,10 +763,9 @@ procedures were applied to the WHOTS-{{cookiecutter.current_whots_deployment_num
 ## Vector Measuring Current Meter (VMCM)
 
 Vector measuring current meters (VMCM) were deployed on the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring at
-depths of 10 m and 30 m, serial numbers SN 2042 and 2032, respectively. VMCM 
-data were processed by the WHOI/UOP group, and the record times are shown 
+depths of 10 m and 30 m, serial numbers SN 2042 and 2032, respectively. VMCM
+data were processed by the WHOI/UOP group, and the record times are shown
 in {numref}`table-22`.
-
 
 ```{table} Record times (UTC mm/dd/yy hh:mm) for the VMCMs at 10 m and 30 m during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment
 :class: sd-m-auto
@@ -830,7 +803,6 @@ the U velocity difference, and the bottom panel shows the percentage of ADCP
 data within the moving average not flagged by quality control methods.
 ```
 
-
 ```{figure} figures/ngvm_adcp/wh{{cookiecutter.current_whots_deployment_number}}_NGVM_30_V.png
 :height: 1000px
 :align: center
@@ -838,7 +810,6 @@ data within the moving average not flagged by quality control methods.
 
 Same as in {numref}`figure5.24` but for the meridional (V) velocity component.
 ```
-
 
 ```{figure} figures/ngvm_adcp/wh{{cookiecutter.current_whots_deployment_number}}_NGVM_10_U.png
 :height: 1000px
@@ -848,7 +819,6 @@ Same as in {numref}`figure5.24` but for the meridional (V) velocity component.
 Same as in {numref}`figure5.24` but for the 10 m VMCM.
 ```
 
-
 ```{figure} figures/ngvm_adcp/wh{{cookiecutter.current_whots_deployment_number}}_NGVM_10_V.png
 :height: 1000px
 :align: center
@@ -857,20 +827,19 @@ Same as in {numref}`figure5.24` but for the 10 m VMCM.
 Same as {numref}`figure5.26`, but for the meridional (V) velocity component.
 ```
 
-
 ## Global Positioning System Receiver
 
-Xeos Global Positioning System receiver (Melo-`IMEI:300034012129060`) and 
+Xeos Global Positioning System receiver (Melo-`IMEI:300034012129060`) and
 (Rover-`IMEI:300434063359170`) were attached to the buoy's tower
-top during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment 
+top during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment
 ({ref}`/3_section.md#description-of-whots-{{cookiecutter.current_whots_deployment_number}}-mooring`). Data returns from the
-receiver were high ({numref}`table-23`). There was no ARGOS receiver for 
+receiver were high ({numref}`table-gps`). There was no ARGOS receiver for
 WHOTS-{{cookiecutter.current_whots_deployment_number}}.
 
 ```{table} GPS record times (UTC mm/dd/yy hh:mm) during WHOTS-{{cookiecutter.current_whots_deployment_number}}
 :class: sd-m-auto
 :align: center
-:name: table-23
+:name: table-gps
 |   **Raw file**   |  **Xeos GPS (Melo)**  |  **Xeos GPS (Rover)**  |
 |:----------------:|:---------------------:|:----------------------:|
 |  **Start Time**  |     10/6/19 03:07     |     7/30/19 21:01      |
