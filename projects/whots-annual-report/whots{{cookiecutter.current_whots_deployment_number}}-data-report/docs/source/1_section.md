@@ -25,7 +25,7 @@ used to investigate air-sea interaction processes related to climate
 variability.
 
 The original mooring system is described in the mooring deployment/recovery
-cruise reports {cite}`Plueddemann2006, Whelan2007, Whelan2008,Whelan2008,Whelan2010,Santiago-Mandujano2019,Hasbrouck2019,Santiago-Mandujano2021,Santiago-Mandujano2022`.
+cruise reports {cite}`Plueddemann2006, Whelan2007, Whelan2008,Whelan2008,Whelan2010,Santiago-Mandujano2019,Hasbrouck2019,Santiago-Mandujano2021,Santiago-Mandujano2022a, Santiago-Mandujano2022b`.
 Briefly, a Surlyn foam surface buoy is equipped with meteorological
 instrumentation, including two complete Air-Sea Interaction Meteorological
 (ASIMET) systems, measuring air and sea surface temperatures, relative humidity,
