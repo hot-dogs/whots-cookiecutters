@@ -2,61 +2,59 @@
 
 ## WHOTS-{{cookiecutter.current_whots_deployment_number}} Cruise: WHOTS-{{cookiecutter.current_whots_deployment_number}} Mooring Deployment
 
-
 The Woods Hole Oceanographic Institution Upper Ocean Processes Group (WHOI/UOP)
 , with the UH group's assistance, conducted the {{cookiecutter.current_whots_deployment_number}} deployment of the
 WHOTS mooring onboard the {{cookiecutter.current_whots_ship}} during the WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise between
-{{ (cookiecutter.current_whots_cruise_start_date|string)[3:-5]}}  {{ (cookiecutter.current_whots_cruise_start_date|string)[:2]}} 
+{{ (cookiecutter.current_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.current_whots_cruise_start_date|string)[:2]}}
 and {{ (cookiecutter.current_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.current_whots_cruise_end_date|string)[:2]}},
-{{ (cookiecutter.current_whots_cruise_end_date|string)[-4:]}}. The WHOTS-{{cookiecutter.current_whots_deployment_number}} 
-mooring was deployed at Station {{cookiecutter.current_whots_deployment_station}} on 
-{{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[:2]}},  {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}}, 
-{{cookiecutter.current_whots_deployment_time}} UTC at 
-{{cookiecutter.current_whots_deployment_anchor_position_latitude}}, {{cookiecutter.current_whots_deployment_anchor_position_longitude}}, 
-and the WHOTS-{{cookiecutter.previous_whots_deployment}} mooring were recovered 
-on {{ (cookiecutter.previous_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.previous_whots_recovery_date|string)[:2]}},  {{ (cookiecutter.previous_whots_recovery_date|string)[-4:]}}. 
-The scientific personnel that participated during the cruise are listed in 
+{{ (cookiecutter.current_whots_cruise_end_date|string)[-4:]}}. The WHOTS-{{cookiecutter.current_whots_deployment_number}}
+mooring was deployed at Station {{cookiecutter.current_whots_deployment_station}} on
+{{ (cookiecutter.current_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.current_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.current_whots_deployment_date|string)[-4:]}},
+{{cookiecutter.current_whots_deployment_time}} UTC at
+{{cookiecutter.current_whots_deployment_anchor_position_latitude}}, {{cookiecutter.current_whots_deployment_anchor_position_longitude}},
+and the WHOTS-{{cookiecutter.previous_whots_deployment}} mooring were recovered
+on {{ (cookiecutter.previous_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.previous_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.previous_whots_recovery_date|string)[-4:]}}.
+The scientific personnel that participated during the cruise are listed in
 {numref}`table-1`.
 
 ```{table} Scientific personnel on Ship Oscar Sette during the WHOTS-{{cookiecutter.current_whots_deployment_number}} deployment cruise.
 :class: sd-m-auto
 :align: center
 :name: table-1
-|           **Name**           |      **Title or function**       | **Affiliation** |
-|:----------------------------:|:--------------------------------:|:---------------:|
-|      Plueddeman, Albert      |         Chief Scientist          |      WHOI       |
-|         Pietro, Ben          |   Senior Engineering Assistant   |      WHOI       |
-|       Graham, Raymond        |        Research Associate        |      WHOI       |
-|       Maloney, Kelsey        |        Student Assistant         |       UH        |
-|       Fitzgerald, Dan        |  Marine Electronics Technician   |       UH        |
-|        Rohrer, Tully         |        Research Associate        |       UH        |
-| Santiago-Mandujano, Fernando |        Research Associate        |       UH        |
-|         Tabata, Ryan         | Research Oceanography Specialist |       UH        |
-|         Howins, Noah         |     Undergraduate Volunteer      |       UH        |
-|        Pezoa, Sergio         |            Scientist             |      ESRL       |
-|        Gonzales, Sean        |     Undergraduate Volunteer      |       HPU       |
 
+|      **Name**       |          **Title or function**          |        **Affiliation**         |
+| :-----------------: | :-------------------------------------: | :----------------------------: |
+| Plueddeman, Albert  |             Chief Scientist             |              WHOI              |
+|   Graham, Raymond   |     Senior Engineering Assistant II     |              WHOI              |
+|    Llanos, Nico     |     Senior Engineering Assistant I      |              WHOI              |
+|   Fitzgerald, Dan   |      Marine Electronics Technician      |               UH               |
+|    Harris, James    |            Student Assistant            |               UH               |
+|   Maloney, Kelsey   | Visiting Researcher Program Coordinator |            UH/HIMB             |
+|    Howins, Noah     |         Undergraduate Volunteer         |               UH               |
+| Penunuri, Alexander |            Graduate Student             | University of Colorado Boulder |
+|    Conner, Kyle     |            Graduate Student             |               UH               |
+|    Rohrer, Tully    |           Research Associate            |               UH               |
 ```
 
 The UH group conducted the shipboard oceanographic observations during the
 cruise. A complete description of these operations is available in the
-{cite}`Santiago-Mandujano2021`
+{cite}`Santiago-Mandujano2022a`
 
 A Sea-Bird CTD (conductivity, temperature, and depth) system was used measure
 T, S, and O2 profiles during CTD casts. The time, location, and maximum CTD
 pressure for each profile are listed in {numref}`table-2`. Eleven CTD casts
 were conducted during the WHOTS-{{cookiecutter.current_whots_deployment_number}} cruise. CTD profile data were collected at
-Station {{cookiecutter.previous_whots_deployment_station}} (near the WHOTS-{{cookiecutter.previous_whots_deployment}} buoy) 
-and Station {{cookiecutter.current_whots_deployment_station}} (near the WHOTS-{{cookiecutter.current_whots_deployment_number}} buoy). 
+Station {{cookiecutter.previous_whots_deployment_station}} (near the WHOTS-{{cookiecutter.previous_whots_deployment}} buoy)
+and Station {{cookiecutter.current_whots_deployment_station}} (near the WHOTS-{{cookiecutter.current_whots_deployment_number}} buoy).
 A test cast was conducted at Station 20 (21°28.164´N, 158°21.552´W) offshore of
 Makaha, HI, to an approximate depth of 1500 m to test three acoustic releases (
 two to be used in the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring and one backup) were attached to the
 rosette frame for function testing. Five CTD yo-yo casts were conducted to
 obtain profiles for comparison with subsurface instruments on the WHOTS-{{cookiecutter.current_whots_deployment_number}}
 mooring after deployment, and five yo-yo casts were performed for comparison
-with the WHOTS-{{cookiecutter.previous_whots_deployment}} mooring before recovery. 
-These casts were started less than 0.25 nm from the buoys with varying 
-drift during each cast and consisted of 5 up-down cycles between near the 
+with the WHOTS-{{cookiecutter.previous_whots_deployment}} mooring before recovery.
+These casts were started less than 0.25 nm from the buoys with varying
+drift during each cast and consisted of 5 up-down cycles between near the
 surface and 218 dbar.
 
 Water samples were taken from all casts; 3 to 4 samples for each of them. These
@@ -133,18 +131,18 @@ diurnal cycle is apparent in the temperature and conductivity.
 ## WHOTS-{{cookiecutter.next_whots_deployment}} Cruise: WHOTS-{{cookiecutter.current_whots_deployment_number}} Mooring Recovery
 
 The WHOI/UOP Group conducted the mooring turnaround operations during the
-WHOTS-{{cookiecutter.next_whots_deployment}} cruise between 
-{{ (cookiecutter.next_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_start_date|string)[:2]}}, 
+WHOTS-{{cookiecutter.next_whots_deployment}} cruise between
+{{ (cookiecutter.next_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_start_date|string)[:2]}},
 and {{ (cookiecutter.next_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_end_date|string)[:2]}}, {{ (cookiecutter.next_whots_cruise_end_date|string)[-4:]}}.
 The WHOTS-{{cookiecutter.next_whots_deployment}} mooring
-was deployed at Station {{cookiecutter.next_whots_deployment_station}} on 
-{{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.next_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}}, 
-{{cookiecutter.next_whots_deployment_time}} UTC at 
-{{cookiecutter.next_whots_deployment_anchor_position_latitude}}, 
-{{cookiecutter.next_whots_deployment_anchor_position_longitude}}, 
-and the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was 
-recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}}, 
-{{cookiecutter.current_whots_recovery_time}} UTC. The scientific personnel 
+was deployed at Station {{cookiecutter.next_whots_deployment_station}} on
+{{ (cookiecutter.next_whots_deployment_date|string)[3:-5]}} {{ (cookiecutter.next_whots_deployment_date|string)[:2]}}, {{ (cookiecutter.next_whots_deployment_date|string)[-4:]}},
+{{cookiecutter.next_whots_deployment_time}} UTC at
+{{cookiecutter.next_whots_deployment_anchor_position_latitude}},
+{{cookiecutter.next_whots_deployment_anchor_position_longitude}},
+and the WHOTS-{{cookiecutter.current_whots_deployment_number}} mooring was
+recovered on {{ (cookiecutter.current_whots_recovery_date|string)[3:-5]}} {{ (cookiecutter.current_whots_recovery_date|string)[:2]}}, {{ (cookiecutter.current_whots_recovery_date|string)[-4:]}},
+{{cookiecutter.current_whots_recovery_time}} UTC. The scientific personnel
 that participated during the cruise are listed in
 {numref}`table-4`.
 
@@ -171,9 +169,9 @@ cruise report {cite}`Santiago-Mandujano2022`
 A Sea-Bird CTD system was used to measure T, S, and O2 profiles during CTD
 casts. The time, location, and maximum CTD pressure for each profile are listed
 in {numref}`table-5`. Ten CTD casts were conducted during the WHOTS-{{cookiecutter.next_whots_deployment}} cruise,
-from  {{ (cookiecutter.next_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_start_date|string)[:2]}}, 
-through {{ (cookiecutter.next_whots_cruise_end_date|string)[3:-5]}}  {{ (cookiecutter.next_whots_cruise_end_date|string)[:2]}}, {{ (cookiecutter.next_whots_cruise_end_date|string)[-4:]}}.
-CTD profile data were collected at Station 20 (in transit to the WHOTS 
+from {{ (cookiecutter.next_whots_cruise_start_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_start_date|string)[:2]}},
+through {{ (cookiecutter.next_whots_cruise_end_date|string)[3:-5]}} {{ (cookiecutter.next_whots_cruise_end_date|string)[:2]}}, {{ (cookiecutter.next_whots_cruise_end_date|string)[-4:]}}.
+CTD profile data were collected at Station 20 (in transit to the WHOTS
 mooring), Station {{cookiecutter.next_whots_deployment_station}} (near the WHOTS-{{cookiecutter.next_whots_deployment}}
 buoy), Station {{cookiecutter.current_whots_deployment_station}} (near the WHOTS-{{cookiecutter.current_whots_deployment_number}} buoy), and at Station 2 at the ALOHA site.
 The cast at Station 20 was 1508 m deep, and three acoustic releases (two to be
@@ -245,3 +243,4 @@ liters/minute during the cruise. Only the SBE-45 has a debubbler. Salinity
 water samples were taken every 8 hours from the exhaust in the Chemistry lab
 using 0.25-liter glass bottles, to be measured in the UH lab to correct any
 drift in the thermosalinograph conductivities.
+
